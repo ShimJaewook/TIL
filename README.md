@@ -1,6 +1,2 @@
-# TIL
-Today I Learned
-
-## 나의 다짐
-- 111커밋
-- 치팅하지 않는다.
+## TALK IS CHEAP.
+# 💰 SHOW ME THE CODE.
