@@ -1,0 +1,8 @@
+package com.vega2k.myspringboot.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface AccountRepository extends JpaRepositorytory<Account, ID>{
+
+}

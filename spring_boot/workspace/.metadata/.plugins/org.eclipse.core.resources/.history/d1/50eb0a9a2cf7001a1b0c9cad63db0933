@@ -1,0 +1,18 @@
+package com.vega2k.myspringboot.repository;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class AccountRepositoryTest {
+
+	private AccountRepository repository;
+	
+	@Test
+	public void account() throws Exception {
+		// 1. Account 객체 생성 -> 등록
+	}
+}

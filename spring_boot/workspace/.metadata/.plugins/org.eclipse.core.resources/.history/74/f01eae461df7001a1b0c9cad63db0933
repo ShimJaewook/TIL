@@ -1,0 +1,17 @@
+package com.vega2k.myspringboot.entity;
+
+import javax.persistence.ColumnResult;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Account {
+	
+	@Id @GeneratedValue
+	private Long id;
+	
+	@ColumnResult
+	private String username;
+	
+}

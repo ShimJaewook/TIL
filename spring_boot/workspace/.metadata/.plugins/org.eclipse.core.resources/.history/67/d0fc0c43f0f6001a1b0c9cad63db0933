@@ -1,0 +1,3 @@
+server.port=8086
+vega2k.name=길동
+vega2k.value=${random.int(1,50)}

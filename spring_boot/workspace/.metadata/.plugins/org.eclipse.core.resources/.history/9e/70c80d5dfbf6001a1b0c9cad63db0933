@@ -1,0 +1,5 @@
+package com.vega2k.myspringboot.config;
+
+public class ProdConfiguration {
+
+}

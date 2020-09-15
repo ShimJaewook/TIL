@@ -1,0 +1,10 @@
+package com.vega2k.myspringboot.entity;
+
+import javax.persistence.Entity;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@Entity
+public class Account {
+
+}

@@ -1,0 +1,10 @@
+package com.vega2k.myspringboot.property;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.stereotype.Component;
+
+@Component
+@ConfigurationProperties
+public class Vega2kProperties {
+	
+}

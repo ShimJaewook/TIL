@@ -1,0 +1,10 @@
+package com.vega2k.myspringboot.runner;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DBRunner implements ApplicationRunner {
+
+		
+	
+}

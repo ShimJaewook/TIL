@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;dbMeta&apos; from expression &apos;connection.getMetaData()&apos;&#x0D;&#x0A;- Original project: &apos;myspringboot&apos;&#x0D;&#x0A;- Variable name: &apos;dbMeta&apos;&#x0D;&#x0A;- Destination method: &apos;com.vega2k.myspringboot.runner.DBRunner.run()&apos;&#x0D;&#x0A;- Variable expression: &apos;connection.getMetaData()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;dbMeta&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.vega2k.myspringboot.runner{DBRunner.java" name="dbMeta" replace="true" selection="916 25" stamp="1600148297005" varType="false" version="1.0"/>
+</session>

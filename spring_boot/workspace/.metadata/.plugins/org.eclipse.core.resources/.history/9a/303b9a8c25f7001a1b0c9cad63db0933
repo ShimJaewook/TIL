@@ -1,0 +1,13 @@
+#tomcat port 번호변경
+server.port=8087
+
+#사용자 정의 환경변수 선언
+vega2k.name=gildong
+vega2k.age=${random.int(1,50)}
+vega2k.fullName=Hong${vega2k.name}
+
+spring.profiles.active=test
+
+logging.path=logs
+
+spring.jpa.show-sql=true
