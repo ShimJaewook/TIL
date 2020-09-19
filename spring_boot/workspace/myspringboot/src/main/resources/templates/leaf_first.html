@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2 th:text="${myName}">Hello Thymeleaf</h2>
+	<h2>Hello, <span th:text="${myName}"></span></h2>
+	<h2>헬로우, [[${myName}]]</h2>
+</body>
+</html>

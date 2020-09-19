@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8">
+<head>
+<script type="text/javascript">
+	function deleteUser(email) {
+		console.log('-->' + email);
+		var repEmail = email.replace(/(^"|"$)/g,'');
+		console.log('-->' + repEmail);
+		var result = confirm(repEmail + " 사용자를 정말로 삭제 하시겠습니까?");
+		if(result) {
+			location.href = "/delete/" + repEmail;
+		}
+	}
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+		</tr>
+		<tr th:each="user : ${users}">
+			<td th:text="${user.name}"></td>
+			<td th:text="${user.email}"></td>
+			<td> <a th:href="@{/edit/{id}(id=${user.id})}">update</a></td>
+			<td><button th:onclick="deleteUser('[[${user.email}]]')">delete</button></td>
+		</tr>
+	</table>
+	<a href="/signup">사용자 등록</a>
+</body>
+</html>

@@ -1,1 +1,11 @@
 1600148297005	Extract local variable 'dbMeta'
+1600230265006	Extract local variable 'account'
+1600230288356	Extract local variable 'optional'
+1600230678583	Extract local variable 'optEmail'
+1600233438540	Extract local variable 'findById'
+1600234049403	Extract local variable 'accountList'
+1600242068918	Extract local variable 'updatedUser'
+1600310815978	Extract local variable 'userList'
+1600318934594	Copy file
+1600321138782	Delete element
+1600405889063	Extract local variable 'optEmail'
