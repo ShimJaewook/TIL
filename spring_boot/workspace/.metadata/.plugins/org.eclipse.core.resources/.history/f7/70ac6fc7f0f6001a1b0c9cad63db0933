@@ -1,9 +1,0 @@
-package com.vega2k.myspringboot.runner;
-
-import org.springframework.stereotype.Component;
-
-// 스프링 빈으로 등록하기 위해 컴포넌트 어노테이션 사용
-@Component
-public class MyRunner {
-
-}

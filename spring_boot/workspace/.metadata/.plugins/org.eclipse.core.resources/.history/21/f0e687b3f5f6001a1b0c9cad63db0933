@@ -1,8 +1,0 @@
-package com.vega2k.myspringboot.property;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class Vega2kProperties {
-
-}

@@ -1,7 +1,0 @@
-#tomcat port 번호변경
-server.port=8086
-
-#사용자 정의 환경변수 선언
-vega2k.name=햐ㅣ애ㅜㅎ
-vega2k.value=${random.int(1,50)}
-vega2k.fullName=홍${vega2k.name}

@@ -46,11 +46,14 @@ public class BookStoreJpaImpl implements BookStore {
 		bookStore.deleteById(ISBN);
 	}
 
-	@Override
-	public List<Book> search(String keyword, String searchType) {
-		
-		return null;
-	}
+//	@Override
+//	public List<Book> search(String keyword, String searchType) {
+//		String query = "SELECT * FROM books WHERE " + searchType + " like %" + keyword+ "%'";
+//		List<BookJpo> books = bookSearch.findByQuery(query);
+//		
+//		if(books.isEmpty()) throw new NoSuchElementException("books empty");
+//		return null;
+//	}
 
 
 

@@ -15,7 +15,7 @@ public class BookServiceImpl implements BookService {
 	private BookStore bookStore;
 	
 	@Override
-	public List<Book> bookList(Book book) throws NoSuchElementException{
+	public List<Book> bookList() throws NoSuchElementException{
 		// TODO Auto-generated method stub
 		List<Book> books = bookStore.retrieveAll();
 		return books;

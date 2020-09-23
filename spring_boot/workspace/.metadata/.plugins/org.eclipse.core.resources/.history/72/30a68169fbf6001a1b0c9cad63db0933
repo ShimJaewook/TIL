@@ -1,9 +1,0 @@
-package com.vega2k.myspringboot.config;
-
-import org.springframework.stereotype.Component;
-
-@Profile("prod")
-@Component
-public class ProdConfiguration {
-
-}

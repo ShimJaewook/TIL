@@ -33,24 +33,24 @@ public class Book {
 	
 	
 	
-	public Book() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-
-
-	public Book(String iSBN, String title, String author, String publichser, double price, String imgUrl,
-			String introduce) {
-		super();
-		ISBN = iSBN;
-		this.title = title;
-		this.author = author;
-		this.publichser = publichser;
-		this.price = price;
-		this.imgUrl = imgUrl;
-		this.introduce = introduce;
-	}
+//	public Book() {
+//		super();
+//		// TODO Auto-generated constructor stub
+//	}
+//
+//
+//
+//	public Book(String iSBN, String title, String author, String publichser, double price, String imgUrl,
+//			String introduce) {
+//		super();
+//		ISBN = iSBN;
+//		this.title = title;
+//		this.author = author;
+//		this.publichser = publichser;
+//		this.price = price;
+//		this.imgUrl = imgUrl;
+//		this.introduce = introduce;
+//	}
 
 
 
@@ -148,7 +148,4 @@ public class Book {
 				"Spring Boot and Spring Cloud offer java Developers an easy");
 	}
 	
-	public static void main(String [] args) {
-		System.out.println(Book.sample());
-	}
 }
