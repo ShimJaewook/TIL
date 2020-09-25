@@ -10,7 +10,7 @@
 - - [-프로세스vs스레드](./OS/threadVsProcess.md)
 
 - [⚡️ **네트워크**]()
-- - [-CORS란?](./netword/cors.md)
+- - [-CORS란?](./network/cors.md)
 
 - [🍋**MongoDB**]()
 - - [-기본CRUD](./mongodb/CRUD.md)
