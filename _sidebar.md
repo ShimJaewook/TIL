@@ -9,8 +9,10 @@
 - [💿 **운영체제**]()
 - - [-프로세스vs스레드](./OS/threadVsProcess.md)
 
+- [⚡️ **네트워크**]()
+- - [-CORS란?](./netword/cors.md)
+
 - [🍋**MongoDB**]()
 - - [-기본CRUD](./mongodb/CRUD.md)
-
 
 - [🙈 **이전블로그**](https://lizarmong-water.tistory.com/)
