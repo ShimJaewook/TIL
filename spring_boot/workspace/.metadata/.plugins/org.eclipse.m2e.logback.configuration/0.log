@@ -14432,3 +14432,4 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracle:oj
 2020-09-24 10:35:33,537 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2020-09-24 13:21:35,681 [Worker-32: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.oracle:ojdbc6:jar:11.2.0 is missing, no dependency information available
 2020-09-25 12:43:25,626 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-09-26 12:31:51,391 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

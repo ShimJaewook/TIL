@@ -57,6 +57,7 @@ Taehoon님의 유튜브인데 굉장히 설명을 잘하시고 목소리도 좋�
 ### 3. CORS(Cross Origin Resource Sharing)
 ---
 ![](./src/cors_cors.png)
+
 *출처: https://developer.mozilla.org/ko/docs/Web/HTTP/CORS*
 
 CORS는 브라우저와 서버 간의 안전한 교차 출처 요청 및 데이터 전송을 지원한다.
