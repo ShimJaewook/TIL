@@ -13,7 +13,7 @@ Taehoon님의 유튜브인데 굉장히 설명을 잘하시고 목소리도 좋�
 ### 1. 단일 도메인 웹
 ---
 예전의 웹 사이트들은 상당수가 하나의 도메인만 필요로 하면 됐다. 
-는
+
 사용자가 웹 브라우저 주소창에 url을 입력하고 해당 서버에서는 그에 해당하는 HTML을 반환한다. 
 
 다른 서버를 방문할 필요 없이 하나의 서버에서 비지니스 로직과 HTML 페이지 빌드를 모두 담당하였고 자바스크립트를 활용해 추가 요청을 한다 해도 어차피 하나의 도메인에서 모든 것이 처리가 되었다.
@@ -57,7 +57,7 @@ Taehoon님의 유튜브인데 굉장히 설명을 잘하시고 목소리도 좋�
 ### 3. CORS(Cross Origin Resource Sharing)
 ---
 ![](./src/cors_cors.png)
-*<center> 출처: https://developer.mozilla.org/ko/docs/Web/HTTP/CORS</center>*
+*출처: https://developer.mozilla.org/ko/docs/Web/HTTP/CORS*
 
 CORS는 브라우저와 서버 간의 안전한 교차 출처 요청 및 데이터 전송을 지원한다.
 
