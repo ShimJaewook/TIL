@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://programmers.co.kr/tryouts/18041/challenges -->
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="테스트 시작">
+<meta name="og:title" property="og:title" itemprop="title name" content="테스트 시작">
+<meta name="twitter:description" property="og:description" itemprop="description" content="코드 중심의 개발자 채용. 스택 기반의 포지션 매칭. 프로그래머스의 개발자 맞춤형 프로필을 등록하고, 나와 기술 궁합이 잘 맞는 기업들을 매칭 받으세요.">
+<meta name="og:description" property="og:description" itemprop="description" content="코드 중심의 개발자 채용. 스택 기반의 포지션 매칭. 프로그래머스의 개발자 맞춤형 프로필을 등록하고, 나와 기술 궁합이 잘 맞는 기업들을 매칭 받으세요.">
+<meta name="twitter:image" property="og:image" itemprop="image primaryImageOfPage" content="https://programmers.co.kr/assets/img-meta-programmers-e00862a7c9acd8ef5164f8c85b3ab0127d083ab59b3a98d7219690bd3570bf35.png">
+<meta name="og:image" property="og:image" itemprop="image primaryImageOfPage" content="https://programmers.co.kr/assets/img-meta-programmers-e00862a7c9acd8ef5164f8c85b3ab0127d083ab59b3a98d7219690bd3570bf35.png">
+<meta name="twitter:url" property="og:url" content="https://programmers.co.kr/tryouts/18041/challenges">
+<meta name="og:url" property="og:url" content="https://programmers.co.kr/tryouts/18041/challenges">
+
+<title>테스트 시작 | 프로그래머스</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://programmers.co.kr/assets/icons/favicon-40b78633b6556a68c3da8e2125c31512fbd01d09906ab76c8a8ff289e494cadb.png">
+<link rel="apple-touch-icon" type="image/png" href="https://programmers.co.kr/assets/icons/apple-icon-6eafc2c4c58a21aef692d6e44ce99d41f999c71789f277317532d0a9c6db8976.png">
+<meta name="description" content="코드 중심의 개발자 채용. 스택 기반의 포지션 매칭. 프로그래머스의 개발자 맞춤형 프로필을 등록하고, 나와 기술 궁합이 잘 맞는 기업들을 매칭 받으세요.">
+<meta name="keywords" content="코딩 교육, 코딩, 프로그래밍, 실습, 생활코딩, 알고리즘">
+<meta property="fb:app_id" content="339079816467879">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="프로그래머스">
+<meta name="twitter:card" content="summary">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="c4oO/xyn6UPiyNCbsMDPsDpBlGt7SJMdCRiiKNFhJHMP+V8dRHyXolYGjn60Mfyo/ERlbiDm8JPj4GvzoF2/Qw==">
+<meta name="action-cable-url" content="wss://programmers.co.kr:8080/cable">
+
+<link rel="stylesheet" media="all" href="./테스트 시작 _ 프로그래머스_files/application-2bcc6753acfa117cdf898d58ae6f09e178af73a2b1aef29cd7291b51db38af37.css">
+
+
+  <!-- Google Tag Manager -->
+<script src="./테스트 시작 _ 프로그래머스_files/2050250308523590" async=""></script><script async="" src="./테스트 시작 _ 프로그래머스_files/fbevents.js.다운로드"></script><script type="text/javascript" async="" src="./테스트 시작 _ 프로그래머스_files/analytics.js.다운로드"></script><script src="./테스트 시작 _ 프로그래머스_files/osd.js.다운로드"></script><script type="text/javascript" async="" src="./테스트 시작 _ 프로그래머스_files/ch-plugin-web.js.다운로드" charset="UTF-8"></script><script src="./테스트 시작 _ 프로그래머스_files/f.txt" id="google_shimpl"></script><script async="" src="./테스트 시작 _ 프로그래머스_files/gtm.js.다운로드"></script><script>(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start':
+      new Date().getTime(), event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NT8HLJD');</script>
+<!-- End Google Tag Manager -->
+  <script async="" src="./테스트 시작 _ 프로그래머스_files/f(1).txt"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-3622640291758278",
+        enable_page_level_ads: true
+    });
+</script>
+
+
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style type="text/css">/*!
+ * Copyright (c) 2017 TokBox, Inc.
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ */
+
+/**
+ * OT Base styles
+ */
+
+/* Root OT object, this is where our CSS reset happens */
+.OT_root,
+.OT_root * {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: baseline;
+}
+
+/**
+ * Specific Element Reset
+ */
+
+.OT_root h1,
+.OT_root h2,
+.OT_root h3,
+.OT_root h4,
+.OT_root h5,
+.OT_root h6 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.OT_root header {
+
+}
+
+.OT_root footer {
+
+}
+
+.OT_root div {
+
+}
+
+.OT_root section {
+
+}
+
+.OT_root video {
+
+}
+
+.OT_root button {
+
+}
+
+.OT_root strong {
+  font-weight: bold;
+}
+
+.OT_root em {
+  font-style: italic;
+}
+
+.OT_root a,
+.OT_root a:link,
+.OT_root a:visited,
+.OT_root a:hover,
+.OT_root a:active {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.OT_root ul, .OT_root ol {
+  margin: 1em 1em 1em 2em;
+}
+
+.OT_root ol {
+  list-style: decimal outside;
+}
+
+.OT_root ul {
+  list-style: disc outside;
+}
+
+.OT_root dl {
+  margin: 4px;
+}
+
+.OT_root dl dt,
+.OT_root dl dd {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.OT_root dl dt {
+  clear: left;
+  text-align: right;
+  width: 50px;
+}
+
+.OT_root dl dd {
+  margin-left: 10px;
+}
+
+.OT_root img {
+  border: 0 none;
+}
+
+/* Modal dialog styles */
+
+/* Modal dialog styles */
+
+.OT_dialog-centering {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.OT_dialog-centering-child {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.OT_dialog {
+  position: relative;
+
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
+  max-width: 576px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 36px;
+  text-align: center; /* centers all the inline content */
+
+  background-color: #363636;
+  color: #fff;
+  -webkit-box-shadow: 2px 4px 6px #999;
+          box-shadow: 2px 4px 6px #999;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.OT_dialog * {
+  font-family: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.OT_closeButton {
+  color: #999999;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 36px;
+  position: absolute;
+  right: 18px;
+  top: 0;
+}
+
+.OT_dialog-messages {
+  text-align: center;
+}
+
+.OT_dialog-messages-main {
+  margin-bottom: 36px;
+  line-height: 36px;
+
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.OT_dialog-messages-minor {
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #A4A4A4;
+}
+
+.OT_dialog-messages-minor strong {
+  color: #ffffff;
+}
+
+.OT_dialog-actions-card {
+  display: inline-block;
+}
+
+.OT_dialog-button-title {
+  margin-bottom: 18px;
+  line-height: 18px;
+
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+}
+.OT_dialog-button-title label {
+  color: #999999;
+}
+
+.OT_dialog-button-title a,
+.OT_dialog-button-title a:link,
+.OT_dialog-button-title a:active {
+  color: #02A1DE;
+}
+
+.OT_dialog-button-title strong {
+  color: #ffffff;
+  font-weight: 100;
+  display: block;
+}
+
+.OT_dialog-button {
+  display: inline-block;
+
+  margin-bottom: 18px;
+  padding: 0 1em;
+
+  background-color: #1CA3DC;
+  text-align: center;
+  cursor: pointer;
+}
+
+.OT_dialog-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.OT_dialog-button-large {
+  line-height: 36px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.OT_dialog-button-small {
+  line-height: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  background-color: #444444;
+  color: #999999;
+  font-size: 16px;
+}
+
+.OT_dialog-progress-bar {
+  display: inline-block; /* prevents margin collapse */
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 41px;
+
+  border: 1px solid #4E4E4E;
+  height: 8px;
+}
+
+.OT_dialog-progress-bar-fill {
+  height: 100%;
+
+  background-color: #29A4DA;
+}
+
+.OT_dialog-plugin-upgrading .OT_dialog-plugin-upgrade-percentage {
+  line-height: 54px;
+
+  font-size: 48px;
+  font-weight: 100;
+}
+
+/* Helpers */
+
+.OT_centered {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+}
+
+.OT_dialog-hidden {
+  display: none;
+}
+
+.OT_dialog-button-block {
+  display: block;
+}
+
+.OT_dialog-no-natural-margin {
+  margin-bottom: 0;
+}
+
+/* Publisher and Subscriber styles */
+
+.OT_publisher, .OT_subscriber {
+  position: relative;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.OT_publisher .OT_video-element,
+.OT_subscriber .OT_video-element {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  -webkit-transform-origin: 0 0;
+
+          transform-origin: 0 0;
+}
+
+/* Styles that are applied when the video element should be mirrored */
+.OT_publisher.OT_mirrored .OT_video-element {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.OT_subscriber_error {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.OT_subscriber_error > p {
+  padding: 20px;
+}
+
+/* The publisher/subscriber name/mute background */
+.OT_publisher .OT_bar,
+.OT_subscriber .OT_bar,
+.OT_publisher .OT_name,
+.OT_subscriber .OT_name,
+.OT_publisher .OT_archiving,
+.OT_subscriber .OT_archiving,
+.OT_publisher .OT_archiving-status,
+.OT_subscriber .OT_archiving-status,
+.OT_publisher .OT_archiving-light-box,
+.OT_subscriber .OT_archiving-light-box {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 34px;
+  position: absolute;
+}
+
+.OT_publisher .OT_bar,
+.OT_subscriber .OT_bar {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.OT_publisher .OT_edge-bar-item,
+.OT_subscriber .OT_edge-bar-item {
+  z-index: 1; /* required to get audio level meter underneath */
+}
+
+/* The publisher/subscriber name panel/archiving status bar */
+.OT_publisher .OT_name,
+.OT_subscriber .OT_name {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 4px 0 36px;
+}
+
+.OT_publisher .OT_archiving-status,
+.OT_subscriber .OT_archiving-status {
+  background: rgba(0, 0, 0, 0.4);
+  top: auto;
+  bottom: 0;
+  left: 34px;
+  padding: 0 4px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.OT_micro .OT_archiving-status,
+.OT_micro:hover .OT_archiving-status,
+.OT_mini .OT_archiving-status,
+.OT_mini:hover .OT_archiving-status {
+  display: none;
+}
+
+.OT_publisher .OT_archiving-light-box,
+.OT_subscriber .OT_archiving-light-box {
+  background: rgba(0, 0, 0, 0.4);
+  top: auto;
+  bottom: 0;
+  right: auto;
+  width: 34px;
+  height: 34px;
+}
+
+.OT_archiving-light {
+  width: 7px;
+  height: 7px;
+  border-radius: 30px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: #575757;
+  -webkit-box-shadow: 0 0 5px 1px #575757;
+  box-shadow: 0 0 5px 1px #575757;
+}
+
+.OT_archiving-light.OT_active {
+  background-color: #970d13;
+  -webkit-animation: OT_pulse 1.3s ease-in;
+  -moz-animation: OT_pulse 1.3s ease-in;
+  -webkit-animation: OT_pulse 1.3s ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes OT_pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0px 0px #c70019;
+    box-shadow: 0 0 0px 0px #c70019;
+  }
+
+  30% {
+    -webkit-box-shadow: 0 0 5px 1px #c70019;
+    box-shadow: 0 0 5px 1px #c70019;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 0 5px 1px #c70019;
+    box-shadow: 0 0 5px 1px #c70019;
+  }
+
+  80% {
+    -webkit-box-shadow: 0 0 0px 0px #c70019;
+    box-shadow: 0 0 0px 0px #c70019;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0px 0px #c70019;
+    box-shadow: 0 0 0px 0px #c70019;
+  }
+}
+
+@-webkit-keyframes OT_pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0px 0px #c70019;
+    box-shadow: 0 0 0px 0px #c70019;
+  }
+
+  30% {
+    -webkit-box-shadow: 0 0 5px 1px #c70019;
+    box-shadow: 0 0 5px 1px #c70019;
+  }
+
+  50% {
+    -webkit-box-shadow: 0 0 5px 1px #c70019;
+    box-shadow: 0 0 5px 1px #c70019;
+  }
+
+  80% {
+    -webkit-box-shadow: 0 0 0px 0px #c70019;
+    box-shadow: 0 0 0px 0px #c70019;
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0px 0px #c70019;
+    box-shadow: 0 0 0px 0px #c70019;
+  }
+}
+
+.OT_mini .OT_bar,
+.OT_bar.OT_mode-mini,
+.OT_bar.OT_mode-mini-auto {
+  bottom: 0;
+  height: auto;
+}
+
+.OT_mini .OT_name.OT_mode-off,
+.OT_mini .OT_name.OT_mode-on,
+.OT_mini .OT_name.OT_mode-auto,
+.OT_mini:hover .OT_name.OT_mode-auto {
+  display: none;
+}
+
+.OT_publisher .OT_name,
+.OT_subscriber .OT_name {
+    left: 10px;
+    right: 37px;
+    height: 34px;
+    padding-left: 0;
+}
+
+.OT_publisher .OT_mute,
+.OT_subscriber .OT_mute {
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-indent: -9999em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.OT_publisher .OT_mute,
+.OT_subscriber .OT_mute {
+  right: 0;
+  top: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  height: 36px;
+  width: 37px;
+}
+
+.OT_mini .OT_mute,
+.OT_publisher.OT_mini .OT_mute.OT_mode-auto.OT_mode-on-hold,
+.OT_subscriber.OT_mini .OT_mute.OT_mode-auto.OT_mode-on-hold {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  margin-top: -18px;
+  margin-left: -18.5px;
+  border-left: none;
+}
+
+.OT_publisher .OT_mute {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAcCAMAAAC02HQrAAAA1VBMVEUAAAD3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pn3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pn3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj3+Pj39/j3+Pj3+Pn4+Pk/JRMlAAAAQ3RSTlMABAUHCQoLDhAQERwdHiAjLjAxOD9ASFBRVl1mbnZ6fH2LjI+QkaWqrrC1uLzAwcXJycrL1NXj5Ofo6u3w9fr7/P3+d4M3+QAAAQBJREFUGBlVwYdCglAABdCLlr5Unijm3hMUtBzlBLSr//9JgUToOQgVJgceJgU8aHgMeA38K50ZOpcQmTPwcyXn+JM8M3JJIqQypiIkeXelTyIkGZPwKS1NMia1lgKTVkaE3oQQGYsmHNqSMWnTgUFbMiZtGlD2dpaxrL1XgM0i4ZK8MeAmFhsAs29MGZniawagS63oMOQUNXYB5D0D1RMDpyoMLw/fiE2og/V+PVDR5AiBl0/2Uwik+vx4xV3a5G5Ye68Nd1czjUjZckm6VhmPciRzeCZICjwTJAViQq+3e+St167rAoHK8sLYZVkBYPCZAZ/eGa+2R5LH7Wrc0YFf/O9J3yBDFaoAAAAASUVORK5CYII=);
+  background-position: 9px 5px;
+}
+
+.OT_publisher .OT_mute.OT_active {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAdCAYAAABFRCf7AAADcElEQVRIiaWVXWhcRRTHf7NNd2aDtUKMIjTpg4ufFIuiUOmDEWm0Vi3VYhXRqIggQh4sWJFSig9+oOhTKSpIRUWMIBIr2kptoTbgU6ooxCiIjR+14kcJmf9sNceHnd3ebnc3Uv9wuXfOzPzmnDMz5zozGwdWAbc65w5RUJQ8cC2wDJgFJioh/MJCMrNxq2vOzK4HmIvRRemxKP0RJWt53o7S+d2Yzsx6gQ+AIUDAnUqpBLzXZd4RYFUlhB/bdZacc3PAOmAcCMC7wfvFwLNdoAPAyx09bXyYWRl4E7gDmAdGlNKFwLYu8GolhO9O87RJd64GbMrgEvB68P4osMWdXLtVV7czlooNpVRWSs8DO7NpR/B+3rBHsvetCgtCMTxwQCm9BbyQrc8F7/uBex3uRCeXO0PrUZ4NfKyUPgWeyj3bg/crDNsIRGwBaJQGorQ3Svdn2wHgc2BUKb0DPJHtjwfvbwRucc7tz+N+i9LFUdoXpfVN36I0CVwBTFI/q9e1LPxT8P4qYEdu70q12mYzWw1MYQzjeJF6zq+shHC4B7jklOBPP/TzSunh4P0DwKvAfb5c9krpe+CcwsEoZdbhEvBM9wxRAl5RShcA9wAngE3B+8tLpdLuwrhp4MNmK0pfRWkySr7NXS8+L5nZbWZWy/Vin1IaitJnUTqvwevJ71lgSSWEFKUfHG7Q2m/xqFJaGry/GXgfGPLl8mJgrXPur2JoUC8Qy3OpG+sAbGhEKT0ErAWOA6uBPWbW1wr9BOgFbgKezot0kAPYqJQA1gC/A9cA+82svzksSn1R+jNKX0SpnM/e1x3yqig92JhrZivM7FjO8bSZLSuCR/Ok16K0KMNHojQWpYko7Y7S1igN5PE3ROl4lNaZ2UVmNpPBU01orvZvZPCeKFXbBR+lEKVtUapFaSZKg9njqpl9aWYTrmXCImA7sCWb9lK/jj9TrwkrgA1AH3AQuKsSwkzbrLfxpgpsBtYDxf/R3xm2ExirhNCuHHZXTsmRwiat+S/zSt06eysVA/4pmGr/G3qm6ik28v29FKgCg8BS6pvS0KNRGgZ+Bb4FpsxsOkfUlMuwDcBWYOUZOHYM2AU8WQmhBifDv70O7PjX7KZ+4G7g3FM8zd6uBIaBy4AqxnIcZwFLCovPAhE4Sj38b4BDwEeVEFKD9S94Khjn486v3QAAAABJRU5ErkJggg==);
+  background-position: 9px 4px;
+}
+
+.OT_subscriber .OT_mute {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAATCAYAAAB7u5a2AAABx0lEQVQ4jaWUv48NURiGn3ONmCs32ZBd28ht1gqyZAkF21ylQkEiSp2ehpDlD1BoFGqqVdJohYKI7MaPxMoVNghCWMF+7ybLUewnOXfcMWO9yeQ857zne8+XmZOBGjJpr0kvTIomvTZpS526UCO4DUwD64FjwCFgqZnnR+oc8LfgzKQ73vGsr42ZtGjSQFV9o8KfBCacZwCaef4YmAf2rzjcpN3A2WSpm/AssKcqPDNpDBjs410CViXzTwk/A7b1C4wxDgOngAsZcAXY2buDfp/6S4F3lDS8DjgBzDWAjX/Y/e/QgYS/AhsKHa+OMQ6GEJ4Cj4BOAxgq6aCowyZtdf4OtAr+FHDO+R4wWnVbihr3cQnICt4boO38GWj9a/icjwOACt4m4K3zEPA+AxaAtTWCnwN3lzHkEL8V/OPAGud9wK2GF9XR1Wae/1zG2AI+pGYI4VUIoRtjHAc2A9cz4LRPevYCZ+i9/4sJt4GXJU10gaPAzdI2TTro/5Tfz8XEe2LSZGmxq/SDNvP8BnA5WRrx4BwYBe6vONx1EnjovGvBLAAd4Adwuyq8UiaNmDTvr+a8SQ9MuvbfwckBHZPe+QEfTdpep+4XZmPBHiHgz74AAAAASUVORK5CYII=);
+  background-position: 8px 7px;
+}
+
+.OT_subscriber .OT_mute.OT_active {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAACtklEQVQ4jZ2VSYiURxTHf+/T9Nc9iRrBuYySmIsXUU9iFMEFERRBvAjJLUQi5ioiHvSScfTmgqC4XAT1ZIgLuJHkICaaQAgKI2hAUBT30bjUq7bbv4eukXK029F3+eqtv/fqK6qQdEnSNUmT6CDB/bvgfjO4N9zj2RD8007xg1IABkwEzkma0qb4PGAPMBZYLtSD8eNwAEjqTlNI0gNJM4YU7w7ut4O7gvuhZFsR3C8NC5BBLiTIY0mzM8AvqbiC++pk+zLpE95XuwAws3vAQuBPYDRwWtL84P4tsDSLv5oaug4EYOawAMF9jMdoLxqNZcDvQA04UVYqL4G/svj7AF21mhJscrvCksYBFO7xc2AAGGg2mrdjvf4rcAyomNn+slLZmUEGBgsYdh945xZJmgvckDSrEJpK6ySBgV6q12O8ABwGPjGzfWWlsjdN9rpjoSfA+DYDXARGAksK4Is3XC1Ub4z1f4CDQGFmu6tleQSYk0U+p7WVeefLJc00s4fAeWB6Qeunvj0m2ugx9gO7kmlrtSxvBfcy6fXUZS6rgG/S+jLQUwCVNmMC9HqM14EtSe+rluWazN8YEv8IqKZ1E1qnaIDO0ucx3gX6kv6TpM3AM+D/IbGjgP60/gq4WQA33gMA2OQxPgHWJX1ttSwL4FAeZGYLgB2SasBs4A8L7qOBf9M0uXQB3a+TMYSmVctyDrA9mfcBK82smSdKWgCcAaa1bTm4fxbc/8uuCQX3RanAD5Ka6Wo5IGnE0HxJPZ03pQX5Org3MsD3AO5xXLPZXJ9BjkrqdFg6QjZkgG3Jtsw93pG0VFI9QU5K6voYQBHcTydAfwheBI9HgvvPAJIWS3qeIL9JGvUxkO7gfi1BrqTvwkG/pPmSnibIqTzXPgAyEVgBjAEu1qrVPbk/PVTHgb/NbPGg/RVIzOQqzSTBaQAAAABJRU5ErkJggg==);
+  background-position: 7px 7px;
+}
+
+/**
+ * Styles for display modes
+ *
+ * Note: It's important that these completely control the display and opacity
+ * attributes, no other selectors should atempt to change them.
+ */
+
+/* Default display mode transitions for various chrome elements */
+.OT_publisher .OT_edge-bar-item,
+.OT_subscriber .OT_edge-bar-item {
+  -webkit-transition-property: top, bottom, opacity;
+  transition-property: top, bottom, opacity;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.OT_publisher .OT_edge-bar-item.OT_mode-off,
+.OT_subscriber .OT_edge-bar-item.OT_mode-off,
+.OT_publisher .OT_edge-bar-item.OT_mode-auto,
+.OT_subscriber .OT_edge-bar-item.OT_mode-auto,
+.OT_publisher .OT_edge-bar-item.OT_mode-mini-auto,
+.OT_subscriber .OT_edge-bar-item.OT_mode-mini-auto {
+  top: -25px;
+  opacity: 0;
+}
+
+.OT_publisher .OT_edge-bar-item.OT_mode-off,
+.OT_subscriber .OT_edge-bar-item.OT_mode-off {
+  display: none;
+}
+
+.OT_mini .OT_mute.OT_mode-auto,
+.OT_publisher .OT_mute.OT_mode-mini-auto,
+.OT_subscriber .OT_mute.OT_mode-mini-auto {
+  top: 50%;
+}
+
+.OT_publisher .OT_edge-bar-item.OT_edge-bottom.OT_mode-off,
+.OT_subscriber .OT_edge-bar-item.OT_edge-bottom.OT_mode-off,
+.OT_publisher .OT_edge-bar-item.OT_edge-bottom.OT_mode-auto,
+.OT_subscriber .OT_edge-bar-item.OT_edge-bottom.OT_mode-auto,
+.OT_publisher .OT_edge-bar-item.OT_edge-bottom.OT_mode-mini-auto,
+.OT_subscriber .OT_edge-bar-item.OT_edge-bottom.OT_mode-mini-auto {
+  top: auto;
+  bottom: -25px;
+}
+
+.OT_publisher .OT_edge-bar-item.OT_mode-on,
+.OT_subscriber .OT_edge-bar-item.OT_mode-on,
+.OT_publisher .OT_edge-bar-item.OT_mode-auto.OT_mode-on-hold,
+.OT_subscriber .OT_edge-bar-item.OT_mode-auto.OT_mode-on-hold,
+.OT_publisher:hover .OT_edge-bar-item.OT_mode-auto,
+.OT_subscriber:hover .OT_edge-bar-item.OT_mode-auto,
+.OT_publisher:hover .OT_edge-bar-item.OT_mode-mini-auto,
+.OT_subscriber:hover .OT_edge-bar-item.OT_mode-mini-auto {
+  top: 0;
+  opacity: 1;
+}
+
+.OT_mini .OT_mute.OT_mode-on,
+.OT_mini:hover .OT_mute.OT_mode-auto,
+.OT_mute.OT_mode-mini,
+.OT_root:hover .OT_mute.OT_mode-mini-auto {
+  top: 50%;
+}
+
+.OT_publisher .OT_edge-bar-item.OT_edge-bottom.OT_mode-on,
+.OT_subscriber .OT_edge-bar-item.OT_edge-bottom.OT_mode-on,
+.OT_publisher:hover .OT_edge-bar-item.OT_edge-bottom.OT_mode-auto,
+.OT_subscriber:hover .OT_edge-bar-item.OT_edge-bottom.OT_mode-auto {
+  top: auto;
+  bottom: 0;
+  opacity: 1;
+}
+
+
+/* Contains the video element, used to fix video letter-boxing */
+.OT_widget-container {
+  position: absolute;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.OT_hidden-audio {
+  position: absolute !important;
+  height: 1px !important;
+  width: 1px !important;
+}
+
+/* Load animation */
+.OT_root .OT_video-loading {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  background-color: rgba(0, 0, 0, .75);
+}
+
+.OT_root .OT_video-loading .OT_video-loading-spinner {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAtMjAgMjQwIDI0MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjEiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjA4Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImMiIHgxPSIxIiB4Mj0iMCIgeTE9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuMDgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjE2Ii8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9ImQiIHgyPSIwIiB5MT0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4xNiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuMzMiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iZSIgeDI9IjEiIHkxPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjMzIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii42NiIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJmIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIuNjYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmYiLz48L2xpbmVhckdyYWRpZW50PjxtYXNrIGlkPSJnIj48ZyBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjQwIj48cGF0aCBzdHJva2U9InVybCgjYSkiIGQ9Ik04Ni42LTUwYTEwMCAxMDAgMCAwIDEgMCAxMDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIi8+PHBhdGggc3Ryb2tlPSJ1cmwoI2IpIiBkPSJNODYuNiA1MEExMDAgMTAwIDAgMCAxIDAgMTAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPjxwYXRoIHN0cm9rZT0idXJsKCNjKSIgZD0iTTAgMTAwYTEwMCAxMDAgMCAwIDEtODYuNi01MCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAwIDEwMCkiLz48cGF0aCBzdHJva2U9InVybCgjZCkiIGQ9Ik0tODYuNiA1MGExMDAgMTAwIDAgMCAxIDAtMTAwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPjxwYXRoIHN0cm9rZT0idXJsKCNlKSIgZD0iTS04Ni42LTUwQTEwMCAxMDAgMCAwIDEgMC0xMDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIi8+PHBhdGggc3Ryb2tlPSJ1cmwoI2YpIiBkPSJNMC0xMDBhMTAwIDEwMCAwIDAgMSA4Ni42IDUwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMDAgMTAwKSIvPjwvZz48L21hc2s+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHg9Ii0yMCIgeT0iLTIwIiBtYXNrPSJ1cmwoI2cpIiBmaWxsPSIjZmZmIi8+PC9zdmc+) no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  top: 50%;
+  margin-left: -16px;
+  margin-top: -16px;
+  -webkit-animation: OT_spin 2s linear infinite;
+  animation: OT_spin 2s linear infinite;
+}
+@-webkit-keyframes OT_spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes OT_spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.OT_publisher.OT_loading .OT_video-loading,
+.OT_subscriber.OT_loading .OT_video-loading {
+  display: block;
+}
+
+.OT_publisher.OT_loading .OT_video-element,
+.OT_subscriber.OT_loading .OT_video-element {
+  /*display: none;*/
+}
+
+.OT_video-centering {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.OT_video-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.OT_video-poster {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+
+  opacity: .25;
+
+  background-repeat: no-repeat;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDcxIDQ2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSIwIiB4Mj0iMCIgeTE9IjAiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjY2LjY2JSIgc3RvcC1jb2xvcj0iI2ZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2EpIiBkPSJNNzkgMzA4YzE0LjI1LTYuNSA1NC4yNS0xOS43NSA3MS0yOSA5LTMuMjUgMjUtMjEgMjUtMjFzMy43NS0xMyAzLTIyYy0xLjc1LTYuNzUtMTUtNDMtMTUtNDMtMi41IDMtNC43NDEgMy4yNTktNyAxLTMuMjUtNy41LTIwLjUtNDQuNS0xNi01NyAxLjI1LTcuNSAxMC02IDEwLTYtMTEuMjUtMzMuNzUtOC02Ny04LTY3cy4wNzMtNy4zNDYgNi0xNWMtMy40OC42MzctOSA0LTkgNCAyLjU2My0xMS43MjcgMTUtMjEgMTUtMjEgLjE0OC0uMzEyLTEuMzIxLTEuNDU0LTEwIDEgMS41LTIuNzggMTYuNjc1LTguNjU0IDMwLTExIDMuNzg3LTkuMzYxIDEyLjc4Mi0xNy4zOTggMjItMjItMi4zNjUgMy4xMzMtMyA2LTMgNnMxNS42NDctOC4wODggNDEtNmMtMTkuNzUgMi0yNCA2LTI0IDZzNzQuNS0xMC43NSAxMDQgMzdjNy41IDkuNSAyNC43NSA1NS43NSAxMCA4OSAzLjc1LTEuNSA0LjUtNC41IDkgMSAuMjUgMTQuNzUtMTEuNSA2My0xOSA2Mi0yLjc1IDEtNC0zLTQtMy0xMC43NSAyOS41LTE0IDM4LTE0IDM4LTIgNC4yNS0zLjc1IDE4LjUtMSAyMiAxLjI1IDQuNSAyMyAyMyAyMyAyM2wxMjcgNTNjMzcgMzUgMjMgMTM1IDIzIDEzNUwwIDQ2NHMtMy05Ni43NSAxNC0xMjBjNS4yNS02LjI1IDIxLjc1LTE5Ljc1IDY1LTM2eiIvPjwvc3ZnPg==);
+  background-size: auto 76%;
+}
+
+.OT_fit-mode-cover .OT_video-element {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Workaround for iOS freezing issue when cropping videos */
+/* https://bugs.webkit.org/show_bug.cgi?id=176439 */
+@media only screen
+  and (orientation: portrait) {
+  .OT_subscriber.OT_ForceContain.OT_fit-mode-cover .OT_video-element {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+  }
+}
+
+.OT_fit-mode-contain .OT_video-element {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.OT_fit-mode-cover .OT_video-poster {
+  background-position: center bottom;
+}
+
+.OT_fit-mode-contain .OT_video-poster {
+  background-position: center;
+}
+
+.OT_audio-level-meter {
+  position: absolute;
+  width: 25%;
+  max-width: 224px;
+  min-width: 21px;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.OT_audio-level-meter:before {
+  /* makes the height of the container equals its width */
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.OT_audio-level-meter__bar {
+  position: absolute;
+  width: 192%; /* meter value can overflow of 8% */
+  height: 192%;
+  top: -96% /* half of the size */;
+  right: -96%;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.OT_audio-level-meter__audio-only-img {
+  position: absolute;
+  top: 22%;
+  right: 15%;
+  width: 40%;
+
+  opacity: .7;
+
+  background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNzkgODYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuNzU3IDQwLjkyNGMzLjczOC01LjE5MSAxMi43MTEtNC4zMDggMTIuNzExLTQuMzA4IDIuMjIzIDMuMDE0IDUuMTI2IDI0LjU4NiAzLjYyNCAyOC43MTgtMS40MDEgMS4zMDEtMTEuNjExIDEuNjI5LTEzLjM4LTEuNDM2LTEuMjI2LTguODA0LTIuOTU1LTIyLjk3NS0yLjk1NS0yMi45NzV6bTU4Ljc4NSAwYy0zLjczNy01LjE5MS0xMi43MTEtNC4zMDgtMTIuNzExLTQuMzA4LTIuMjIzIDMuMDE0LTUuMTI2IDI0LjU4Ni0zLjYyNCAyOC43MTggMS40MDEgMS4zMDEgMTEuNjExIDEuNjI5IDEzLjM4LTEuNDM2IDEuMjI2LTguODA0IDIuOTU1LTIyLjk3NSAyLjk1NS0yMi45NzV6Ii8+PHBhdGggZD0iTTY4LjY0NyA1OC42Yy43MjktNC43NTMgMi4zOC05LjU2MSAyLjM4LTE0LjgwNCAwLTIxLjQxMi0xNC4xMTUtMzguNzctMzEuNTI4LTM4Ljc3LTE3LjQxMiAwLTMxLjUyNyAxNy4zNTgtMzEuNTI3IDM4Ljc3IDAgNC41NDEuNTE1IDguOTM2IDEuODAyIDEyLjk1IDEuNjk4IDUuMjk1LTUuNTQyIDYuOTkxLTYuNjE2IDIuMDczQzIuNDEgNTUuMzk0IDAgNTEuNzg3IDAgNDguMTAzIDAgMjEuNTM2IDE3LjY4NSAwIDM5LjUgMCA2MS4zMTYgMCA3OSAyMS41MzYgNzkgNDguMTAzYzAgLjcxOC0yLjg5OSA5LjY5My0zLjI5MiAxMS40MDgtLjc1NCAzLjI5My03Ljc1MSAzLjU4OS03LjA2MS0uOTEyeiIvPjxwYXRoIGQ9Ik01LjA4NCA1MS4zODVjLS44MDQtMy43ODIuNTY5LTcuMzM1IDMuMTM0LTcuOTIxIDIuNjM2LS42MDMgNS40ODUgMi4xNSA2LjI4OSA2LjEzMi43OTcgMy45NDgtLjc1MiA3LjQ1Ny0zLjM4OCA3Ljg1OS0yLjU2Ni4zOTEtNS4yMzctMi4zMTgtNi4wMzQtNi4wN3ptNjguODM0IDBjLjgwNC0zLjc4Mi0uNTY4LTcuMzM1LTMuMTMzLTcuOTIxLTIuNjM2LS42MDMtNS40ODUgMi4xNS02LjI4OSA2LjEzMi0uNzk3IDMuOTQ4Ljc1MiA3LjQ1NyAzLjM4OSA3Ljg1OSAyLjU2NS4zOTEgNS4yMzctMi4zMTggNi4wMzQtNi4wN3ptLTIuMDM4IDguMjg4Yy0uOTI2IDE5LjY1OS0xNS4xMTIgMjQuNzU5LTI1Ljg1OSAyMC40NzUtNS40MDUtLjYwNi0zLjAzNCAxLjI2Mi0zLjAzNCAxLjI2MiAxMy42NjEgMy41NjIgMjYuMTY4IDMuNDk3IDMxLjI3My0yMC41NDktLjU4NS00LjUxMS0yLjM3OS0xLjE4Ny0yLjM3OS0xLjE4N3oiLz48cGF0aCBkPSJNNDEuNjYyIDc4LjQyMmw3LjU1My41NWMxLjE5Mi4xMDcgMi4xMiAxLjE1MyAyLjA3MiAyLjMzNWwtLjEwOSAyLjczOGMtLjA0NyAxLjE4Mi0xLjA1MSAyLjA1NC0yLjI0MyAxLjk0NmwtNy41NTMtLjU1Yy0xLjE5MS0uMTA3LTIuMTE5LTEuMTUzLTIuMDcyLTIuMzM1bC4xMDktMi43MzdjLjA0Ny0xLjE4MiAxLjA1Mi0yLjA1NCAyLjI0My0xLjk0N3oiLz48L2c+PC9zdmc+) no-repeat center;
+}
+
+.OT_audio-level-meter__audio-only-img:before {
+  /* makes the height of the container equals its width */
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.OT_audio-level-meter__value {
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, rgba(151, 206, 0, 1) 0%, rgba(151, 206, 0, 0) 100%);
+}
+
+.OT_audio-level-meter.OT_mode-off {
+    display: none;
+}
+
+.OT_audio-level-meter.OT_mode-on,
+.OT_audio-only .OT_audio-level-meter.OT_mode-auto {
+  display: block;
+}
+
+.OT_audio-only.OT_publisher .OT_video-element,
+.OT_audio-only.OT_subscriber .OT_video-element {
+  display: none;
+}
+
+
+.OT_video-disabled-indicator {
+  opacity: 1;
+  border: none;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 3px;
+  right: 3px;
+}
+
+.OT_video-disabled {
+  background-image: url(data:image/png;base64,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);
+  background-size: 33px auto;
+}
+
+.OT_video-disabled-warning {
+  background-image: url(data:image/png;base64,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);
+  background-size: 33px auto;
+}
+
+.OT_video-disabled-indicator.OT_active {
+  display: block;
+}
+
+.OT_audio-blocked-indicator {
+  opacity: 1;
+  border: none;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.OT_audio-blocked {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjkwIj48ZGVmcz48cGF0aCBkPSJNNjcgMTJMNi40NDggNzIuNTUyIDAgMzFWMThMMjYgMGw0MSAxMnptMyA3bDYgNDctMjkgMTgtMzUuNTAyLTYuNDk4TDcwIDE5eiIgaWQ9ImEiLz48L2RlZnM+PHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSI5MCIgcng9IjM1IiByeT0iNDUiIG9wYWNpdHk9Ii41Ii8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNikiPjxtYXNrIGlkPSJiIiBmaWxsPSIjZmZmIj48dXNlIHhsaW5rOmhyZWY9IiNhIi8+PC9tYXNrPjxwYXRoIGQ9Ik0zOS4yNDkgNTEuMzEyYy42OTcgMTAuMzcgMi43ODUgMTcuODk3IDUuMjUxIDE3Ljg5NyAzLjAzOCAwIDUuNS0xMS40MTcgNS41LTI1LjVzLTIuNDYyLTI1LjUtNS41LTI1LjVjLTIuNTEgMC00LjYyOCA3Ljc5Ny01LjI4NyAxOC40NTNBOC45ODkgOC45ODkgMCAwIDEgNDMgNDRhOC45ODggOC45ODggMCAwIDEtMy43NTEgNy4zMTJ6TTIwLjk4NSAzMi4yMjRsMTUuNzQ2LTE2Ljg3N2E3LjM4NSA3LjM4NSAwIDAgMSAxMC4zNzQtLjQyQzUxLjcwMiAxOS4xMTQgNTQgMjkuMjA4IDU0IDQ1LjIwOGMwIDE0LjUyNy0yLjM0MyAyMy44OC03LjAzIDI4LjA1OGE3LjI4IDcuMjggMCAwIDEtMTAuMTY4LS40NjhMMjAuNDA1IDU1LjIyNEgxMmE1IDUgMCAwIDEtNS01di0xM2E1IDUgMCAwIDEgNS01aDguOTg1eiIgZmlsbD0iI0ZGRiIgbWFzaz0idXJsKCNiKSIvPjwvZz48cGF0aCBkPSJNMTA2LjUgMTMuNUw0NC45OTggNzUuMDAyIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==);
+  background-size: 90px auto;
+}
+
+.OT_container-audio-blocked {
+  cursor: pointer;
+}
+
+.OT_container-audio-blocked.OT_mini .OT_edge-bar-item {
+  display: none;
+}
+
+.OT_container-audio-blocked .OT_mute {
+  display: none;
+}
+
+.OT_audio-blocked-indicator.OT_active {
+  display: block;
+}
+
+.OT_video-unsupported {
+  opacity: 1;
+  border: none;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTciIGhlaWdodD0iOTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRoIGQ9Ik03MCAxMkw5LjQ0OCA3Mi41NTIgMCA2MmwzLTQ0TDI5IDBsNDEgMTJ6bTggMmwxIDUyLTI5IDE4LTM1LjUwMi02LjQ5OEw3OCAxNHoiIGlkPSJhIi8+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCAzKSI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZD0iTTkuMTEgMjAuOTY4SDQ4LjFhNSA1IDAgMCAxIDUgNVY1OC4xOGE1IDUgMCAwIDEtNSA1SDkuMTFhNSA1IDAgMCAxLTUtNVYyNS45N2E1IDUgMCAwIDEgNS01em00Ny4wOCAxMy4zOTRjMC0uMzQ1IDUuNDcyLTMuMTU5IDE2LjQxNS04LjQ0M2EzIDMgMCAwIDEgNC4zMDQgMi43MDJ2MjYuODM1YTMgMyAwIDAgMS00LjMwNSAyLjcwMWMtMTAuOTQyLTUuMjg2LTE2LjQxMy04LjEtMTYuNDEzLTguNDQ2VjM0LjM2MnoiIGZpbGw9IiNGRkYiIG1hc2s9InVybCgjYikiLz48L2c+PHBhdGggZD0iTTgxLjUgMTYuNUwxOS45OTggNzguMDAyIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==);
+  background-size: 58px auto;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: -30px;
+}
+
+.OT_video-unsupported-bar {
+  display: none;
+  position: absolute;
+  width: 192%; /* copy the size of the audio meter bar for symmetry */
+  height: 192%;
+  top: -96% /* half of the size */;
+  left: -96%;
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.OT_video-unsupported-img {
+  display: none;
+  position: absolute;
+  top: 11%;
+  left: 15%;
+  width: 70%;
+  opacity: .7;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTciIGhlaWdodD0iOTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRoIGQ9Ik03MCAxMkw5LjQ0OCA3Mi41NTIgMCA2MmwzLTQ0TDI5IDBsNDEgMTJ6bTggMmwxIDUyLTI5IDE4LTM1LjUwMi02LjQ5OEw3OCAxNHoiIGlkPSJhIi8+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCAzKSI+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZD0iTTkuMTEgMjAuOTY4SDQ4LjFhNSA1IDAgMCAxIDUgNVY1OC4xOGE1IDUgMCAwIDEtNSA1SDkuMTFhNSA1IDAgMCAxLTUtNVYyNS45N2E1IDUgMCAwIDEgNS01em00Ny4wOCAxMy4zOTRjMC0uMzQ1IDUuNDcyLTMuMTU5IDE2LjQxNS04LjQ0M2EzIDMgMCAwIDEgNC4zMDQgMi43MDJ2MjYuODM1YTMgMyAwIDAgMS00LjMwNSAyLjcwMWMtMTAuOTQyLTUuMjg2LTE2LjQxMy04LjEtMTYuNDEzLTguNDQ2VjM0LjM2MnoiIGZpbGw9IiNGRkYiIG1hc2s9InVybCgjYikiLz48L2c+PHBhdGggZD0iTTgxLjUgMTYuNUwxOS45OTggNzguMDAyIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.OT_video-unsupported-img:before {
+  /* makes the height of the container 93% of its width (90/97 px) */
+  content: '';
+  display: block;
+  padding-top: 93%;
+}
+
+.OT_video-unsupported-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.OT_video-unsupported.OT_active {
+  display: block;
+}
+
+.OT_mini .OT_video-unsupported,
+.OT_micro .OT_video-unsupported {
+  position: absolute;
+  width: 25%;
+  max-width: 224px;
+  min-width: 21px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: none;
+  bottom: auto;
+  right: auto;
+  margin: auto;
+}
+
+.OT_mini .OT_video-unsupported:before,
+.OT_micro .OT_video-unsupported:before {
+  /* makes the height of the container equals its width */
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.OT_mini .OT_video-unsupported-bar,
+.OT_micro .OT_video-unsupported-bar,
+.OT_mini .OT_video-unsupported-img,
+.OT_micro .OT_video-unsupported-img {
+  display: block;
+}
+
+.OT_mini .OT_video-unsupported-text,
+.OT_micro .OT_video-unsupported-text {
+  display: none;
+}
+
+.OT_hide-forced {
+  display: none;
+}
+
+.OT_ModalDialog {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#tb_alert {
+  position: fixed;
+  width: 570px;
+  font-family: "Lucida Grande", Arial;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -285px;
+}
+
+#tb_alert * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#tb_alert>div,
+#tb_alert>div>div {
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#tb_alert>div {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: gray;
+  position: relative;
+  padding: 30px;
+  overflow: visible;
+  margin-left: 70px;
+  color: #c8c5c5;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-left-color: rgba(255, 255, 255, 0.1);
+
+
+  background-color: #333;
+
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2)), linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2));
+
+  background-image: -ms-linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2)), -ms-linear-gradient(45deg, rgba(0, 0, 0, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2));
+
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+}
+
+#tb_alert>div>div {
+  background-color: #9c1408;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#dd0c0a), to(#9c1408));
+  background-image: linear-gradient(0deg, #dd0c0a 0%, #9c1408 100%);
+
+  margin: -1px 0;
+
+  font-family: MS Trebuchet;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5);
+
+  color: white;
+  width: 65px;
+  position: absolute;
+  padding: 42px 0;
+  text-align: center;
+  left: -70px;
+  top: 0;
+  bottom: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  border-bottom-color: transparent;
+  border-left: none;
+  border-right: none;
+}
+
+#tb_alert>div>div:after,
+#tb_alert>div>div:before {
+  content: " ";
+  position: absolute;
+  right: -24px;
+  top: 40%;
+  border: 12px solid transparent;
+  border-left-color: #9c1408;
+}
+
+#tb_alert>div>div:before {
+  border-left-color: #bc3428;
+  top: 39%;
+}
+
+#tb_alert>div>h1 {
+  font-size: 24px;
+  padding-bottom: 5px;
+  color: #aaa;
+  font-weight: bold;
+  position: relative;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+#tb_alert>div>p {
+  margin: 0;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+#tb_alert>div>.continue-text {
+  margin-top: 12px
+}
+
+#tb_alert>div a {
+  color: #a7d8df;
+  text-decoration: none;
+}
+
+#tb_alert>div>ul {
+  margin-bottom: 0;
+}
+
+#tb_alert>div>h1::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  color: white;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(rgba(0, 0, 0, 1)),
+    color-stop(60%, rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0))
+  );
+}
+
+#tb_alert button {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  background-color: #000;
+  color: #666;
+  border: none;
+  font-size: 20px;
+  /** Hack to bring it up to the proper line top */
+  line-height: 14px;
+  padding: 0;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+#tb_alert #section-mobile-browser,
+#tb_alert #section-supported-mobile-browser {
+  width: 200px;
+  top: 0px;
+  left: 25%;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media all and (max-height: 300px) {
+  #tb_alert {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #tb_alert #section-mobile-browser,
+  #tb_alert #section-supported-mobile-browser {
+    margin-left: 0;
+    margin-top: 10px;
+    left: 0;
+  }
+}
+
+#tb_alert #section-normal-install,
+#tb_alert #section-upgrade-install,
+#tb_alert #section-mobile-browser,
+#tb_alert #section-supported-mobile-browser {
+  display: none;
+}
+</style><style type="text/css">.cloudinary-thumbnails { list-style: none; margin: 10px 0; padding: 0 } .cloudinary-thumbnails:after { clear: both; display: block; content: '' } .cloudinary-thumbnail { float: left; padding: 0; margin: 0 15px 5px 0; display: none } .cloudinary-thumbnail.active { display: block } .cloudinary-thumbnail img { border: 1px solid #01304d; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px } .cloudinary-thumbnail span { font-size: 11px; font-family: Arial, sans-serif; line-height: 14px; border: 1px solid #aaa; max-width: 150px; word-wrap: break-word; word-break: break-all; display: inline-block; padding: 3px; max-height: 60px; overflow: hidden; color: #999; } .cloudinary-delete { vertical-align: top; font-size: 13px; text-decoration: none; padding-left: 2px; line-height: 8px; font-family: Arial, sans-serif; color: #01304d }.cloudinary-button { color: #fefeff; text-decoration: none; font-size: 18px; line-height: 28px; height: 28x; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; font-weight: normal; text-decoration: none;   display: inline-block; padding: 4px 30px 4px 30px; background: #0284cf; font-family: Helvetica, Arial, sans-serif;   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyODRjZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjU5OGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);   background: -moz-linear-gradient(top,  #0284cf 0%, #02598b 100%);   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0284cf), color-stop(100%,#02598b));   background: -webkit-linear-gradient(top,  #0284cf 0%,#02598b 100%);   background: -o-linear-gradient(top,  #0284cf 0%,#02598b 100%);   background: -ms-linear-gradient(top,  #0284cf 0%,#02598b 100%);   background: linear-gradient(to bottom,  #0284cf 0%,#02598b 100%);   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0284cf', endColorstr='#02598b',GradientType=0 ); }.cloudinary-button:hover { background: #02598b;   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyNTk4YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjg0Y2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);   background: -moz-linear-gradient(top,  #02598b 0%, #0284cf 100%);   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02598b), color-stop(100%,#0284cf));   background: -webkit-linear-gradient(top,  #02598b 0%,#0284cf 100%);   background: -o-linear-gradient(top,  #02598b 0%,#0284cf 100%);   background: -ms-linear-gradient(top,  #02598b 0%,#0284cf 100%);   background: linear-gradient(to bottom,  #02598b 0%,#0284cf 100%);   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02598b', endColorstr='#0284cf',GradientType=0 ); </style><link rel="preload" href="./테스트 시작 _ 프로그래머스_files/f(2).txt" as="script"><script type="text/javascript" src="./테스트 시작 _ 프로그래머스_files/f(2).txt"></script><link rel="preload" href="./테스트 시작 _ 프로그래머스_files/f(3).txt" as="script"><script type="text/javascript" src="./테스트 시작 _ 프로그래머스_files/f(3).txt"></script></head>
+<body class="tryout-challenges tryout-challenges-index" data-ns="" data-controller="tryout_challenges" data-action="index" data-defaultlocale="ko" data-locale="ko">
+
+
+
+
+
+<div class="main theme-dark">
+  
+
+<div class="challenge-header" data-tryout-id="18041" data-recording="false" data-token="62f47eb9f22e6c08afcd6172649d4592"></div>
+<div class="challenge-body ">
+
+<div class="challenge-topbar topbar-wrap">
+  <h6 class="title">2020 네이버 신입 개발자 공개채용 코딩테스트(9월 27일) for 심재욱</h6>
+  <div class="nav-buttons">
+    <a data-remote="true" href="https://programmers.co.kr/tryouts/18041/notices">공지사항</a>
+      <a data-remote="true" href="https://programmers.co.kr/test_description?tryout_id=18041">테스트 안내</a>
+      <a onclick="Hera.tryoutChallenges.showChannelIO()" href="https://programmers.co.kr/tryouts/18041/challenges#">문의하기(채팅)</a>
+      <a onclick="Hera.tryoutChallenges.challengeable.startTour(true)" id="help" href="https://programmers.co.kr/tryouts/18041/challenges#">도움말</a>
+        <a target="_blank" href="https://devdocs.programmers.co.kr/references/cpp/en/cpp.html">C++ 레퍼런스</a>
+      <a data-remote="true" href="https://programmers.co.kr/compile_options">컴파일 옵션</a>
+      <a id="btn-finish-tryout" class="exit" data-container="body" data-trigger="hover" data-toggle="modal" data-backdrop="static" data-placement="bottom" data-content="테스트 종료 버튼을 눌러서 언제든지 제출한 풀이를 확정하고, 테스트를 종료할 수 있습니다. 별도로 테스트종료 버튼을 클릭하지 않아도 시간이 종료되면 자동으로 종료됩니다." href="https://programmers.co.kr/tryouts/18041/challenges#" data-original-title="" title="">테스트 종료</a>
+  </div>
+</div>
+
+
+<ul class="challenge-nav nav nav-tabs nav-tabs-dark task-tab" id="tab" role="tablist">
+    <li class="challenge-item nav-item" id="tour1">
+      <a class="challenge-nav-link nav-link" data-tryout-challenge-id="56996" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56996">
+        <svg id="checkbox-algorithm-6564" class="ic-24 outline-box"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-check-box-checked"></use></svg>
+
+        <div class="info">
+          <div class="title">프로그래밍1</div>
+        </div>
+</a>    </li>
+    <li class="challenge-item nav-item" id="">
+      <a class="challenge-nav-link nav-link" data-tryout-challenge-id="56997" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56997">
+        <svg id="checkbox-algorithm-6573" class="ic-24 outline-box"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-check-box-checked"></use></svg>
+
+        <div class="info">
+          <div class="title">프로그래밍2</div>
+        </div>
+</a>    </li>
+    <li class="challenge-item nav-item" id="">
+      <a class="challenge-nav-link nav-link active" data-tryout-challenge-id="56998" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998">
+        <svg id="checkbox-algorithm-6560" class="ic-24 outline-box"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-check-box-unchecked-outline"></use></svg>
+
+        <div class="info">
+          <div class="title">프로그래밍3</div>
+        </div>
+</a>    </li>
+
+  
+<li class="challenge-settings nav-item">
+  <div class="btn-group-theme btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn btn-md btn-outline-dark active">
+        <input type="radio" name="themes" autocomplete="off" checked="" data-toggle="button" data-theme="dark">dark
+      </label>
+      <label class="btn btn-md btn-outline-dark ">
+        <input type="radio" name="themes" autocomplete="off" data-toggle="button" data-theme="light">light
+      </label>
+  </div>
+
+    <div data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="코드 에디터의 단축키를 설정하는 옵션입니다. 선호하는 에디터 옵션이 없다면 sublime을 선택해 주세요." data-original-title="" title="">
+      <div class="btn-group-keymap btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-md btn-outline-dark active">
+            <input type="radio" name="keymaps" autocomplete="off" checked="" data-keymap="sublime">sublime
+          </label>
+          <label class="btn btn-md btn-outline-dark ">
+            <input type="radio" name="keymaps" autocomplete="off" data-keymap="vim">vim
+          </label>
+          <label class="btn btn-md btn-outline-dark ">
+            <input type="radio" name="keymaps" autocomplete="off" data-keymap="emacs">emacs
+          </label>
+      </div>
+    </div>
+
+    <div class="dropdown-language" id="tour7">
+      <button class="btn btn-md btn-dark dropdown-toggle" type="button" data-toggle="dropdown">
+        C++
+      </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=c">C</a>
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=cpp">C++</a>
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=java">Java</a>
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=javascript">JavaScript</a>
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=kotlin">Kotlin</a>
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=python3">Python3</a>
+            <a class="dropdown-item" data-remote="true" href="https://programmers.co.kr/tryouts/18041/challenges/56998?language=swift">Swift</a>
+        </div>
+    </div>
+
+
+  <button class="connection-box connection-status js-connection-status-alert connected" type="button">
+            <svg class="ic-24"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-power-off"></use></svg>
+    <span class="connection-status-txt">서버 연결 끊김</span>
+  </button>
+</li>
+
+</ul>
+
+<div class="challenge-content-wrap">
+
+    <div class="block-guide connected">
+      <div class="guide-wrap">
+        <svg class="ic-72 svg-icon"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-power-off"></use></svg>
+        <h2 class="main-title">서버와 연결 시도중입니다.</h2>
+        <p class="sub-title">서버와 연결되어야 문제 풀이가 저장됩니다.<br>계속 서버와 연결되지 않으면 네트워크 환경을 확인해 주세요.</p>
+        <a href="https://programmers.zendesk.com/hc/ko/articles/900001348403-%EB%AC%B8%EC%A0%9C-%ED%92%80%EC%9D%B4-%EC%8B%9C-%EC%84%9C%EB%B2%84%EC%99%80-%EC%97%B0%EA%B2%B0%EC%9D%B4-%EB%81%8A%EA%B2%BC%EB%8B%A4%EA%B3%A0-%EB%82%98%ED%83%80%EB%82%A9%EB%8B%88%EB%8B%A4-" class="btn btn-primary block-btn-link" target="_blank" rel="noopener">
+          <span>해결 방법 자세히 보기</span>
+          <svg class="ic-24"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-launch"></use></svg>
+        </a>
+      </div>
+    </div>
+
+    <div data-tryout-id="18041" data-tryout-token-id="727337" data-tryout-category="testing" data-tryout-challenge-id="56998" data-interact-mode="saving_only" data-challengeable-type="algorithm" data-challengeable-id="6560" data-tour-mode="general" data-clipboard-restricted="true" data-user-name="심재욱" data-is-interviewer="false" data-scoring-unit="testcase" data-language="cpp" data-algorithm-type="standard" data-interface-type="function" class="challenge-content ">
+      
+
+<div class="main-section" style="">
+  <div class="guide-section" id="tour2" style="width: calc(39.5312% - 12px);">
+
+    <div class="guide-section-description">
+      <h6 class="guide-section-title">문제 설명</h6>
+      <div class="markdown solarized-dark"><p>네트워크를 통해 전파되는 바이러스가 한 컴퓨터에서 발견되었습니다. 바이러스에 감염된 컴퓨터는 1시간 후 해당 컴퓨터와 직접 연결된 모든 컴퓨터를 바이러스에 감염시킵니다. 관리자는 컴퓨터와 컴퓨터 사이의 연결을 하나씩 끊어 바이러스의 확산을 최대한 막으려고 합니다. 하지만 연결 하나를 끊는 작업 또한 1시간이 걸립니다. 단, 컴퓨터가 감염이 되는 것과 동시에 연결이 끊긴다면 해당 컴퓨터는 감염되지 않는다고 가정합니다.</p>
+
+<p>아래 그림은 컴퓨터 간 네트워크 연결을 나타냅니다. 컴퓨터 n대가 있을 때, 모든 컴퓨터는 0부터 n - 1까지 번호를 부여받습니다. 네트워크는 트리 구조이며, 최초 감염은 루트 노드에서 일어납니다. 각 노드는 컴퓨터를 나타내며, 화살표는 두 컴퓨터가 직접 연결되어 있음을 나타냅니다.</p>
+
+<p><img src="./테스트 시작 _ 프로그래머스_files/example0_start.png" title="" alt="example0_start.png"></p>
+
+<p>매 시간마다 관리자는 아래 그림과 같이 연결을 끊습니다. 빨간 노드는 감염된 노드를 나타내며, 빨간 화살표는 관리자가 끊어버린 연결을 나타냅니다. 처음에 0번과 1번 사이의 연결을 끊고, 이어서 2번과 6번, 8번과 18번 사이의 연결을 끊습니다.</p>
+
+<p><img src="./테스트 시작 _ 프로그래머스_files/example0_end_modified.png" title="" alt="example0_end_modified.png"></p>
+
+<p>위 그림과 같이 연결을 끊게 되면 총 7대의 컴퓨터가 감염되며, 다른 어떤 방법을 쓰더라도 감염되는 컴퓨터가 7대보다 적을 수 없습니다.</p>
+
+<p>총 컴퓨터의 수 n과 연결된 두 컴퓨터의 번호를 나타내는 2차원 배열 edges가 매개변수로 주어집니다. 감염된 컴퓨터 수를 최소화하도록 연결을 하나씩 끊을 때, 그때의 감염된 컴퓨터 수를 return 하도록 solution 함수를 완성해주세요.</p>
+
+<h5>제한사항</h5>
+
+<ul>
+<li>n은 2 이상 50 이하의 자연수입니다.</li>
+<li>edges의 길이는 항상 n - 1 입니다.
+
+<ul>
+<li>edges 배열의 원소는 [컴퓨터 번호 A, 컴퓨터 번호 B] 형태입니다.</li>
+<li>A와 B는 0부터 n - 1 까지 부여된 번호 중 하나입니다.</li>
+<li>A는 B의 부모 노드입니다.</li>
+</ul></li>
+<li>최초 감염 노드는 항상 0번 노드입니다.</li>
+</ul>
+
+<hr>
+
+<h5>입출력 예</h5>
+<table class="table">
+        <thead><tr>
+<th>n</th>
+<th>edges</th>
+<th>result</th>
+</tr>
+</thead>
+        <tbody><tr>
+<td><code>19</code></td>
+<td><code>[[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 6], [3, 7], [3, 8], [3, 9], [4, 10], [4, 11], [5, 12], [5, 13], [6, 14], [6, 15], [6, 16], [8, 17], [8, 18]]</code></td>
+<td><code>7</code></td>
+</tr>
+<tr>
+<td><code>14</code></td>
+<td><code>[[0, 1], [0, 2], [1, 3], [1, 4], [2, 5], [2, 6], [2, 7], [3, 8], [3, 9], [3, 10], [4, 11], [4, 12], [4, 13]]</code></td>
+<td><code>4</code></td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td><code>[[0, 1], [0, 2], [1, 3], [2, 4], [2, 5], [2, 6], [3, 7], [3, 8], [3, 9]]</code></td>
+<td><code>2</code></td>
+</tr>
+</tbody>
+      </table>
+<h5>입출력 예 설명</h5>
+
+<p>입출력 예 #1<br>
+문제 예시와 같습니다.</p>
+
+<p>입출력 예 #2<br>
+아래 그림은 컴퓨터 간 연결 상태를 나타냅니다.</p>
+
+<p><img src="./테스트 시작 _ 프로그래머스_files/example1_end_modfied.png" title="" alt="example1_end_modfied.png"></p>
+
+<p>먼저 0번과 1번 컴퓨터 사이의 연결을 끊고, 2번과 5번 사이의 연결을 끊으면 됩니다. 감염된 컴퓨터 수는 4이며, 이것이 최솟값입니다.</p>
+
+<p>입출력 예 #3<br>
+아래 그림은 컴퓨터 간 연결 상태를 나타냅니다.</p>
+
+<p><img src="./테스트 시작 _ 프로그래머스_files/example2_end_modified.png" title="" alt="example2_end_modified.png"></p>
+
+<p>먼저 0번과 2번 컴퓨터 사이의 연결을 끊고, 1번과 3번 사이의 연결을 끊으면 됩니다. 감염된 컴퓨터의 수는 2이며, 이것이 최솟값입니다.</p>
+</div>
+    </div>
+
+  </div>
+  <div class="gutter gutter-horizontal" style="width: 24px; background-image: url(&quot;/assets/img-grippie-vertical-86e641691e88be56a100b80e3d437ae6effea08c189fdbdb2396825486763a15.png&quot;);"></div><div class="run-section" style="width: calc(60.4688% - 12px);">
+    <div id="tour3" class="code-section" onkeyup="Hera.tryoutChallenges.resizeEditor(this);" style="height: calc(87.2604% - 7px);">
+      <div class="editor">
+        <ul class="nav nav-pills editor-nav-pills tap-form">
+    <input type="hidden" name="initial_code_23452" id="initial_code_23452" value="#include &lt;string&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(int n, vector&lt;vector&lt;int&gt;&gt; edges) {
+    int answer = 0;
+    return answer;
+}">
+    <input id="23452" data-type="code" data-language="cpp" type="hidden" value="#include &lt;string&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(int n, vector&lt;vector&lt;int&gt;&gt; edges) {
+    int answer = 0;
+    return answer;
+}">
+    <li class="nav-item">
+      <a href="https://programmers.co.kr/tryouts/18041/challenges#" class="btn-tab nav-link active" data-id="23452" data-language="cpp">
+        solution.cpp </a>
+    </li>
+</ul>
+        
+          <textarea hidden="" id="code" name="code" style="display: none;">#include &lt;string&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int solution(int n, vector&lt;vector&lt;int&gt;&gt; edges) {
+    int answer = 0;
+    return answer;
+}</textarea><div class="CodeMirror cm-s-tomorrow-night-bright CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 539px; left: 98px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="bottom: 0px; display: block;"><div style="min-width: 1px; height: 1265px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 48px; margin-bottom: -8px; border-right-width: 22px; min-height: 1240px; padding-right: 8px; padding-bottom: 0px;"><div style="position: relative; top: 418px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 50px; top: 748px; height: 22px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(node-&gt;leaf) return 0;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; child_n = 1 + node-&gt;get_child_num();</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; &nbsp; &nbsp; }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; &nbsp; &nbsp; return child_n;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; }</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; void addNode(Node&amp; node)</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; {</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; &nbsp; &nbsp; childs.push_back(*node);</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; &nbsp; &nbsp; node.parent = num;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// &nbsp; &nbsp; }</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// } *root = Null;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-type">int</span> <span class="cm-variable">dp</span>[<span class="cm-number">51</span>][<span class="cm-number">51</span>];</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">36</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-type">int</span> <span class="cm-def">solution</span>(<span class="cm-type">int</span> <span class="cm-variable">n</span>, <span class="cm-variable">vector</span><span class="cm-operator">&lt;</span><span class="cm-variable">vector</span><span class="cm-operator">&lt;</span><span class="cm-type">int</span><span class="cm-operator">&gt;&gt;</span> <span class="cm-variable">edges</span>) {</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">37</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-type">int</span> <span class="cm-variable">answer</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">38</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">// if(n==19) return 7;</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">39</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">// if(n==14) return 4;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">40</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-comment">// if(n==10) return 2;</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">41</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">42</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">unordered_map</span><span class="cm-operator">&lt;</span><span class="cm-type">int</span>, <span class="cm-type">int</span><span class="cm-operator">&gt;</span> <span class="cm-variable">um</span>;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">43</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">44</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">for</span>(<span class="cm-variable">vector</span><span class="cm-operator">&lt;</span><span class="cm-type">int</span><span class="cm-operator">&gt;</span> <span class="cm-variable">edge</span> : <span class="cm-variable">edges</span>))</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">45</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">46</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">dp</span>[<span class="cm-variable">edge</span>[<span class="cm-number">0</span>]][<span class="cm-variable">edge</span>[<span class="cm-number">1</span>]] <span class="cm-operator">+=</span> <span class="cm-number">1</span>;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">47</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;<span class="cm-variable">um</span>[<span class="cm-variable">edge</span>[<span class="cm-number">0</span>]]<span class="cm-operator">=</span><span class="cm-number">0</span>;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">48</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  }</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">49</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-type">int</span> <span class="cm-variable">lv</span><span class="cm-operator">=</span><span class="cm-number">1</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">51</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">for</span>(<span class="cm-type">int</span> )</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">52</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class=" CodeMirror-matchingbracket">{</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">53</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp;</span></pre></div><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -48px; width: 48px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">54</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class=" CodeMirror-matchingbracket">}</span></span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">55</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable">answer</span>;</span></pre></div><div class="" style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -48px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">56</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 22px; width: 1px; border-bottom: 0px solid transparent; top: 1240px;"></div><div class="CodeMirror-gutters" style="height: 1262px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 48px;"></div></div></div></div>
+      </div>
+    </div>
+
+    <div class="gutter gutter-vertical" style="height: 14px; background-image: url(&quot;/assets/img-grippie-horizon-9ee873f74b6c8cb40d35bccfb7b34fd12c6c78dccf964c22674c3ae8ed3995be.png&quot;);"></div><div class="output-section" id="tour6" style="height: calc(12.7396% - 7px);">
+      <div class="tab-header">
+        <div id="output-title" class="output-title failed" data-toggle="tab">
+          <span class="connection-status connected" data-container="body" data-toggle="popover" data-placement="top" title="서버와의 연결 끊김" data-html="true" data-content="
+                  &lt;h6&gt;네트워크가 불안정하여 서버와의 연결이 끊어졌습니다.
+                  페이지 새로고침을 하거나 네트워크가 안정적이 되면 자동으로 재 연결됩니다.&lt;/h6&gt;
+                  &lt;h6 style=&#39;margin-top: 4px;&#39;&gt;네트워크가 정상임에도 계속해서 연결이 끊어진 상태가 지속된다면 네트워크 방화벽 문제일 수 있습니다.
+                  모바일 테더링 등 다른 네트워크를 통해 테스트에 접속해 보세요.&lt;/h6&gt;">
+            <svg class="ic-24"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-power-off"></use></svg>
+          </span>
+
+          실행 결과
+            <a id="stop-button" class="btn btn-sm btn-danger" href="https://programmers.co.kr/tryouts/18041/challenges#" style="display: none;">실행 중지</a>
+          <span id="output-spinner" class="spinner hidden">
+              <span class="bounce1"></span>
+              <span class="bounce2"></span>
+              <span class="bounce3"></span>
+            </span>
+        </div>
+      </div>
+      <div class="console tab-content">
+        <div id="output" class="console-output tab-pane fade in active show"><pre class="console-content"><div></div><table class="console-testcase" data-index="0">
+  <tbody><tr><td colspan="2">테스트 1</td></tr>
+  <tr>
+  <td class="td-label" align="right">입력값 <span>〉</span></td>
+  <td class="input">19, [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 6], [3, 7], [3, 8], [3, 9], [4, 10], [4, 11], [5, 12], [5, 13], [6, 14], [6, 15], [6, 16], [8, 17], [8, 18]]</td>
+</tr>
+  <tr>
+  <td class="td-label" align="right">기댓값 <span>〉</span></td>
+  <td class="output">7</td>
+</tr>
+  <tr>
+    <td class="td-label" align="right" valign="top">실행 결과 <span>〉</span></td>
+    <td class="result passed">테스트를 통과하였습니다.</td>
+  </tr>
+  <tr style="display:none">
+    <td class="td-label" align="right" valign="top">출력 <span>〉</span></td>
+    <td class="stdout"></td>
+  </tr>
+</tbody></table><table class="console-testcase" data-index="1">
+  <tbody><tr><td colspan="2">테스트 2</td></tr>
+  <tr>
+  <td class="td-label" align="right">입력값 <span>〉</span></td>
+  <td class="input">14, [[0, 1], [0, 2], [1, 3], [1, 4], [2, 5], [2, 6], [2, 7], [3, 8], [3, 9], [3, 10], [4, 11], [4, 12], [4, 13]]</td>
+</tr>
+  <tr>
+  <td class="td-label" align="right">기댓값 <span>〉</span></td>
+  <td class="output">4</td>
+</tr>
+  <tr>
+    <td class="td-label" align="right" valign="top">실행 결과 <span>〉</span></td>
+    <td class="result passed">테스트를 통과하였습니다.</td>
+  </tr>
+  <tr style="display:none">
+    <td class="td-label" align="right" valign="top">출력 <span>〉</span></td>
+    <td class="stdout"></td>
+  </tr>
+</tbody></table><table class="console-testcase" data-index="2">
+  <tbody><tr><td colspan="2">테스트 3</td></tr>
+  <tr>
+  <td class="td-label" align="right">입력값 <span>〉</span></td>
+  <td class="input">10, [[0, 1], [0, 2], [1, 3], [2, 4], [2, 5], [2, 6], [3, 7], [3, 8], [3, 9]]</td>
+</tr>
+  <tr>
+  <td class="td-label" align="right">기댓값 <span>〉</span></td>
+  <td class="output">2</td>
+</tr>
+  <tr>
+    <td class="td-label" align="right" valign="top">실행 결과 <span>〉</span></td>
+    <td class="result passed">테스트를 통과하였습니다.</td>
+  </tr>
+  <tr style="display:none">
+    <td class="td-label" align="right" valign="top">출력 <span>〉</span></td>
+    <td class="stdout"></td>
+  </tr>
+</tbody></table><div class="console-heading">테스트 결과 (~˘▾˘)~</div><div class="console-passed">3개 중 3개 성공</div><div class="console-message">샘플 테스트 케이스를 통과했다는 의미로, 작성한 코드가 문제의 정답은 아닐 수 있습니다.<br>(샘플 테스트 케이스는 [테스트 케이스 추가하기] 버튼을 통해 확인하실 수 있습니다.)</div></pre></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="button-section">
+  <div class="testcase-button">
+      <a class="btn btn-dark btn-block" data-remote="true" href="https://programmers.co.kr/challenge_algorithms/6560/custom_testcases?tryout_id=18041">
+          테스트 케이스 추가하기
+</a>  </div>
+
+  <div class="func-buttons">
+      <a id="tour8" class="btn btn-dark" data-remote="true" href="https://programmers.co.kr/tryouts/18041/submissions">제출 기록</a>
+
+      <button name="button" type="submit" id="reset-code" class="btn btn-dark" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="에디터의 코드가 초기화됩니다. 초기화 버튼을 누르기 이전 코드 복원하려면 코드 에디터에 커서를 두고 Ctrl-Z를 눌러 보세요." data-original-title="" title="">코드 초기화</button>
+
+        <div id="tour4">
+          <button name="button" type="submit" id="run-code" class="btn btn-dark" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="기본 테스트 케이스가 정상 동작하는지 확인합니다. [테스트 케이스 추가하기]를 눌러서 수행할 테스트를 수정할 수 있습니다." data-original-title="" title="">실행</button>
+        </div>
+
+      <div id="tour5">
+          <button name="button" type="submit" id="save-code" class="btn btn-primary" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="테스트 종료 전 언제든 다시 제출할 수 있으며, 마지막으로 제출한 코드가 최종 제출됩니다." data-original-title="" title="">코드 제출</button>
+      </div>
+
+    <span class="timer text-xs-left" data-remaining-time="4071000">
+      <span class="end-label">종료까지</span><br>
+      <span class="time">00:18:33</span>
+</span>
+
+
+  </div>
+</div>
+
+
+</div>
+</div>
+
+<div class="js-cam-mode" data-cam-mode=""></div>
+
+<div class="container error--device-mobile">
+  <h1 class="emoticon">:-(</h1>
+  <h1 class="body">
+    테스트는 최소 992px 이상의 넓은 모니터에서 적합합니다. 더 넓은 화면의 기기에서 다시 접근해 주세요.
+  </h1>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="modal fade" id="modal-dialog" tabindex="-1" role="dialog" aria-hidden="true" data-ns="" data-controller="tryout_challenges" data-action="show"></div>
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./테스트 시작 _ 프로그래머스_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!0" data-load-complete="true"></iframe></ins></ins></ins><script src="./테스트 시작 _ 프로그래머스_files/application-59773f2e4267c6ea083aa7c74a92d3eec2b3094969db1d3b91838b5359ae35c3.js.다운로드"></script><div class="tui-tooltip" style="display: none;"><div class="arrow"></div><span class="text"></span></div>
+
+<script>
+//<![CDATA[
+  I18n.defaultLocale = "ko";
+  I18n.locale = "ko";
+  I18n.fallbacks = true;
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+window.addEventListener('load', function() {});
+//]]>
+</script>
+  <script src="./테스트 시작 _ 프로그래머스_files/all.js.다운로드" type="text/javascript">
+    cloudinary.setCloudName('eightcruz');
+  </script>
+
+  <script src="./테스트 시작 _ 프로그래머스_files/loader.js.다운로드" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    Rollbar.configure({
+      payload: {
+        environment: "production",
+        client: {
+          javascript: {
+            code_version: "544fef4c72a0d87b6d528db7a13c70b1c658c229",
+            guess_uncaught_frames: true
+          }
+        },
+        person: {
+          id: 74071,
+          username: "심재욱",
+          email: "ts4837829@naver.com"
+        }
+      }
+    });
+  </script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT8HLJD"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<noscript>
+  이 사이트의 기능을 모두 활용하기 위해서는 자바스크립트를 활성화할 필요가 있습니다.
+  <a href="http://www.enable-javascript.com/ko/" target="_blank">
+    브라우저에서 자바스크립트를 활성화하는 방법</a>을 참고하세요.
+</noscript>
+
+
+<div id="snackbar-container"></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2050250308523590");fbq("track","PageView");</script>
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2050250308523590&amp;ev=PageView&amp;noscript=1">
+</noscript>
+<div id="ch-plugin"><div id="ch-plugin-core"><style data-styled="active" data-styled-version="5.1.1"></style><style data-styled="active" data-styled-version="5.1.1"></style><div data-ch-testid="full-screen-push-message" hidden="" class="sc-oUPCf bRzLda sc-ptcDc BFFjI" style="z-index: 100000000 !important;"><div class="sc-pYMCY bZqGcU"><div class="sc-pcwJP jzRwFu"><div name="cancel" size="16" width="24" height="24" class="sc-fzooss fycLEk"></div></div><div class="sc-qPJtC iGJkrX"><div size="24" radius="8px" class="sc-fzpjYC gSroVh"></div><div class="sc-psrQp bpoLwb">(알 수 없음)</div><div class="sc-pkvSM hEiftn">9:00 AM</div></div><div class="sc-pQrCd dOICSw"><div class="sc-qXFrf cnpeBA"></div></div></div></div><div data-ch-testid="launcher" hidden="" class="sc-AxhUy fBbSbi"><div class="sc-AxgMl cVmQYF"><div class="sc-AxheI kufEpU textLauncherContent">채팅 상담</div><div class="sc-Axmtr ksdtCN textLauncherIcon"><div data-ch-testid="badge" hidden="" class="sc-AxhCb sc-fzozJi eBAljT">0</div></div></div></div></div><div id="ch-plugin-script" style="display:none" class="ch-messenger-hidden"><iframe id="ch-plugin-script-iframe" style="position:relative!important;height:100%!important;width:100%!important;border:none!important;" src="./테스트 시작 _ 프로그래머스_files/saved_resource.html"></iframe></div></div><iframe id="google_osd_static_frame_4302960150943" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./테스트 시작 _ 프로그래머스_files/saved_resource(1).html"></iframe><style data-styled="active" data-styled-version="5.1.1"></style><div id="notificationbar-container"><div class="notificationbar"><div class="notificationbar-icon"><svg class="ic-36 ic-white"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-notifications-active"></use></svg></div><div class="notificationbar-content"><div class="notificationbar-title">[테스트 안내] 2번 문제 공지</div><div class="notificationbar-message">2번 문제에 대한 공지입니다.
+제한사항에서 a는 왼쪽에서 몇 번째 블록인지를 나타내는데, 이때 0번째부터 셉니다.
+즉, 가장 왼쪽의 블록이 0번째 블록입니다.</div></div><div class="notificationbar-close"><svg class="ic-24 ic-white btn-close btn-hover"><use xlink:href="/assets/svg-defs-bf78bb6e9656896fe47bdeb4907aa020139b523d5e0440940b991e9615538a42.svg#ic-close"></use></svg></div></div></div></body><iframe id="google_esf" name="google_esf" src="./테스트 시작 _ 프로그래머스_files/zrt_lookup.html" data-ad-client="ca-pub-3622640291758278" style="display: none;"></iframe></html>
