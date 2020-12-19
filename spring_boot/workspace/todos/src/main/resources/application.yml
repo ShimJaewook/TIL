@@ -1,2 +1,16 @@
 server: 
-  port: 9000
+  port: 9001
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@DESKTOP-IEDEJST:1521/XE
+    username: hr
+    password: hr
+    
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    show-sql: true
