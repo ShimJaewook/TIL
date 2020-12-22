@@ -15,7 +15,7 @@
 - 🎓 **알고리즘**
     - [-[프로그래머스]오픈채팅방(Feat. HashMap)](./algorithm/open_chatting.md)
 
-- ☘️ **스프링과 부트**
+- ☘️ **자바 & 스프링**
     - [-[JPA] JPA 개요](./springAndBoot/jpa_tutorial.md)
 
 - 🍋**MongoDB**
