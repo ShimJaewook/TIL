@@ -1,24 +1,39 @@
 - [Home](_coverpage.md)
 
 - 🐴 **아무말**
-    - [- 라인 코딩테스트&필기 후기](./tmi/lineTest.md)
+    - [라인 코딩테스트&필기 후기](./tmi/lineTest.md)
+
+<br>
 
 - 📌 **마크다운**
-    - [- 마크다운 기초](./markdown/00_markdown_basic.md)
+    - [마크다운 기초](./markdown/00_markdown_basic.md)
+
+<br>
 
 - 💿 **운영체제**
-    - [-프로세스vs스레드](./OS/threadVsProcess.md)
+    - [프로세스vs스레드](./OS/threadVsProcess.md)
+
+<br>
 
 - ⚡️ **네트워크**
-    - [-CORS란?](./network/cors.md)
+    - [CORS란?](./network/cors.md)
+
+<br>
 
 - 🎓 **알고리즘**
-    - [-[프로그래머스]오픈채팅방(Feat. HashMap)](./algorithm/open_chatting.md)
+    - [[프로그래머스]오픈채팅방(Feat. HashMap)](./algorithm/open_chatting.md)
+
+<br>
 
 - ☘️ **자바 & 스프링**
-    - [-[JPA] JPA 개요](./springAndBoot/jpa_tutorial.md)
+    - [[JPA] JPA 개요](./springAndBoot/jpa_tutorial.md)
+    - [[JUnit] JUnit을 사용한 기본 테스트 코드](./springAndBoot/junit_tutorial.md)
+
+<br>
 
 - 🍋**MongoDB**
-    - [-기본CRUD](./mongodb/CRUD.md)
+    - [기본CRUD](./mongodb/CRUD.md)
+
+<br>
 
 - [🙈 **이전블로그**](https://lizarmong-water.tistory.com/)
