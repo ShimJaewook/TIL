@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b00b6da3-f9f2-4a9a-81d5-b9adf5c21c7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jUnitTest/src/main/java/com/test/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jUnitTest/src/main/java/com/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_coverpage.md" beforeDir="false" afterPath="$PROJECT_DIR$/_coverpage.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springAndBoot/junit_tutorial.md" beforeDir="false" afterPath="$PROJECT_DIR$/springAndBoot/junit_tutorial.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/5.2.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/5.2.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/src/main/java/com/test/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTest/src/main/java/com/test/Main.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -59,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608815536804</updated>
       <workItem from="1608815540181" duration="982000" />
+      <workItem from="1608956091743" duration="106000" />
     </task>
     <servers />
   </component>
@@ -70,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
