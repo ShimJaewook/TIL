@@ -22,7 +22,7 @@
 
 - 🎓 **알고리즘**
     - 📁 종만북
-        - [시간복잡도](./algorithm/종만북/시간복잡도.md)
+        - [시간복잡도](./algorithm/jongmanbook/time_complexity.md)
     - [[프로그래머스]오픈채팅방(Feat. HashMap)](./algorithm/open_chatting.md)
 
 <br>
