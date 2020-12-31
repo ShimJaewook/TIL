@@ -48,7 +48,7 @@
 
 
 
-<img src="C:\Users\SJW\Desktop\til\TIL\algorithm\src\ORanking.jpg" style="zoom:67%;" />
+<img src="../src/ORanking.jpg"  />
 
 
 
