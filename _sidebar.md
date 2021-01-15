@@ -36,6 +36,12 @@
 - 🍋**MongoDB**
     - [기본CRUD](./mongodb/CRUD.md)
 
+
+<br>
+
+- 🐳**docker & kubernetes**
+  - [Pod - Container, Label, NodeSchedule](./k8s/object_pod.md)
+
 <br>
 
 - [🙈 **이전블로그**](https://lizarmong-water.tistory.com/)
