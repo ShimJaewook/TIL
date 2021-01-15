@@ -1,8 +1,10 @@
 # Pod - Container, Label, NodeSchedule
 
-
+---
 
 ### 1. Container
+
+---
 
 - Pod 안에는 하나의 독립적인 서비스를 구동할 수 있는 Container들이 존재한다.
 
@@ -43,6 +45,8 @@
 
 
 ### 2. Label
+
+---
 
 Label은 pod 뿐만 아니라 모든 object에 달 수 있다. 그리고 pod에서 가장 많이 사용한다.
 
@@ -89,6 +93,8 @@ spec:
 
 
 ### 3. Node Schedule
+
+---
 
 Pod는 결국, 여러 node들 중에 하나의 노드에 올라가져야 한다.
 
