@@ -168,3 +168,4 @@ spec:
 
  
 
+> 자료출처 : https://kubetm.github.io/practice/beginner/object-service/
