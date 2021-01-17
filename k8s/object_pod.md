@@ -52,9 +52,9 @@ Label은 pod 뿐만 아니라 모든 object에 달 수 있다. 그리고 pod에�
 
 Label을 사용하는 이유는 목적에 따라 object들을 분류하고, 그 분류된 object들만 따로 골라서 연결을 하기 위함이다.
 
-Label의 구성은 key와 value가 한 쌍이며, 하나의 pod에는 여러 개의 label을 달 수 있다.
+Label의 구성은 key와 value가 한 쌍이며 하나의 pod에는 여러 개의 label을 달 수 있다.
 
-Label을 잘 달아 놓으면, hash tag를 달아 검색하여 원하는 용도로 사용할 수 있다. 
+Label을 잘 달아 놓으면 hash tag를 달아 검색하여 원하는 용도로 사용할 수 있다. 
 
 ![](./src/podWithLabel.png)
 
