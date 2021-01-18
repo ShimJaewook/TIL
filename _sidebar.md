@@ -41,7 +41,8 @@
 
 - 🐳**docker & kubernetes**
   - [Pod - Container, Label, NodeSchedule](./k8s/object_pod.md)
-  - [Service](./k8s/service.md)
+  - [Service](./k8s/object_service.md)
+  - [Volume](./k8s/object_volume.md)
 
 <br>
 
