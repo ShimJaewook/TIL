@@ -32,10 +32,76 @@ ConfigMap과 secret의 사용법은 데이터를 **상수**로 넣느냐, **파�
 
 
 
-### 1. Literal
+### 1. Env (Literal)
 
 ---
 
+먼저 상수를 통해 데이터를 관리하는 방법이다.
+
 ConfigMap은 key와 value로 구성되어 있다.
 
-그래서 필요한 상수들을 key: value 형태로 저장을 하면 pod를 생성할 때      
+그래서 필요한 상수들을 key: value 형태로 저장을 하면 pod를 생성할 때 그 값들을 가져와 환경변수에 세팅을 할 수 있다. 
+
+Secret 또한 똑같은 역할을 하지만 비밀번호나 인증키 등 보안이 필요한 값들을 저장한다.
+
+ConfigMap은 무한히 많은 값을 넣을 수 있고, Secret은 1Mb만 값을 넣을 수 있다.
+
+또한 secret은 memory에서 사용하여 보안적인 우위를 점하지만 많이 생성할수록 성능적인 부분에서 핸디캡이 발생한다.
+
+![](./src/literal.jpg)
+
+
+
+**ConfigMap**
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-dev
+data: #아래와 같이 key, value 형태로 넣어주면 된다.
+  SSH: 'false'
+  User: dev
+```
+
+
+
+**Secret**
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sec-dev
+data:
+  Key: MTIzNA==
+```
+
+
+
+**Pod**
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-1
+spec:
+  containers:
+  - name: container
+    image: kubetm/init
+    envFrom:
+    - configMapRef:
+        name: cm-dev
+    - secretRef:
+        name: sec-dev
+```
+
+
+
+
+
+### 2. Env (File)
+
+---
+
