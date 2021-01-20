@@ -36,13 +36,13 @@
 - 🍋**MongoDB**
     - [기본CRUD](./mongodb/CRUD.md)
 
-
 <br>
 
 - 🐳**docker & kubernetes**
-  - [Pod - Container, Label, NodeSchedule](./k8s/object_pod.md)
-  - [Service](./k8s/object_service.md)
-  - [Volume](./k8s/object_volume.md)
+  - [[k8s] Pod ](./k8s/object_pod.md)
+  - [[k8s] Service](./k8s/object_service.md)
+  - [[k8s] Volume](./k8s/object_volume.md)
+  - [[k8s] ConfigMap & Secret](./k8s/object_configMap_seceret.md)
 
 <br>
 
