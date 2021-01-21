@@ -105,3 +105,97 @@ spec:
 
 ---
 
+파일을 통해 configMap 또는 secret에 데이터를 담을 수 있다.
+
+그럴 경우 파일의 이름이 데이터의 key가 된다. 설정 yaml파일 내에서 파일의 이름이 아닌 다른 명칭으로 바꿀 수 있다.
+
+File을 configMap으로 만드는 것은 dashboard에서 지원을 해주지 않는다. 
+
+때문에 직접 master의 콘솔로 들어가 cubectl 명령으로 만들어 줘야 한다.
+
+
+
+**configMap 생성**
+
+```bash
+> echo "Content" >> file-c.txt
+> kubectl create configmap cm-file --from-file=./file.txt
+```
+
+**secret 생성**
+
+```bash
+> echo "Content" >> file-s.txt
+> kubectl create secret generic sec-file --from-file=./file-s.txt
+```
+
+
+
+
+
+![](./src/configMap_file.jpg)
+
+**Pod**
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-file
+spec:
+  containers:
+  - name: container
+    image: kubetm/init
+    env:
+    - name: file-c #
+      valueFrom:
+        configMapKeyRef:
+          name: cm-file
+          key: file-c.txt
+    - name: file-s
+      valueFrom:
+        secretKeyRef:
+          name: sec-file
+          key: file-s.txt
+```
+
+
+
+
+
+### 3. Volume Mount (File)
+
+---
+
+마지막으로는 file을 마운트하는 방법이다.
+
+위의 2번의 방법과 file을 confgMap에 담는 것까지는 같다.
+
+Pod를 만들 때, 컨테이너 내에서 마운트 패스를 정의하고 그 패스 안에 파일을 마운트하면 된다.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-mount
+spec:
+  containers:
+  - name: container
+    image: kubetm/init
+    volumeMounts:
+    - name: file-volume
+      mountPath: /mount # mount할 패스
+  volumes:
+  - name: file-volume
+    configMap: # volume 내에 configMap을 설정해준다.
+      name: cm-file
+```
+
+
+
+2번(file)과 3번(volume mount) 방식은 한가지 큰 차이가 있는데,
+
+pod를 생성한 뒤 configMap의 내용을 변경하게 된다면 2번 방식은 변경 내용이 반영되지 않지만 3번 방식은 변경 내용이 반영된다.
+
+ 2번이 변경되는 경우는 pod가 죽어서 재생성될 경우일 뿐이다.
+
