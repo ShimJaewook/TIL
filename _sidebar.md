@@ -43,8 +43,7 @@
   - [[k8s] Service](./k8s/object_service.md)
   - [[k8s] Volume](./k8s/object_volume.md)
   - [[k8s] ConfigMap & Secret](./k8s/object_configMap_secret.md)
-	- [[k8s] Namespace & ResourceQuota & LimitRange](./k8s/object_namespace_reourceQuota_limitRange.md)
-	
+  - [[k8s] Namespace & ResourceQuota & LimitRange](./k8s/object_namespace_reourceQuota_limitRange.md)
 
 <br>
 
