@@ -43,9 +43,10 @@
   - [[k8s] Service](./k8s/object_service.md)
   - [[k8s] Volume](./k8s/object_volume.md)
   - [[k8s] ConfigMap & Secret](./k8s/object_configMap_secret.md)
-	- [[k8s] Namespace & ResourceQuota & LimitRange](./k8s/object_namespace_ResourceQuota_limitRange.md)
+	- [[k8s] Namespace & ResourceQuota & LimitRange](./k8s/object_namespace_resourceQuota_limitRange.md)
 	
 
 <br>
 
 - [🙈 **이전블로그**](https://lizarmong-water.tistory.com/)
+
