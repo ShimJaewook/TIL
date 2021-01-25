@@ -58,3 +58,6 @@
 
 ![](./src/controller_4.png)
 
+
+
+> Reference : https://kubetm.github.io/practice/beginner/controller-replicationcontroller_replicaset/
