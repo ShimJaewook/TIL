@@ -46,6 +46,7 @@
   - [[k8s] Namespace & ResourceQuota & LimitRange](./k8s/object_namespace_reourceQuota_limitRange.md)
   - [[k8s] Controller](./k8s/controller.md)
   - [[k8s] ReplicationContoller & ReplicaSet](./k8s/replica.md)
+  - [[k8s] Deployment](./k8s/deployment.md)
 
 <br>
 
