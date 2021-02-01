@@ -47,6 +47,7 @@
   - [[k8s] Controller](./k8s/controller.md)
   - [[k8s] ReplicationContoller & ReplicaSet](./k8s/replica.md)
   - [[k8s] Deployment](./k8s/deployment.md)
+  - [[k8s] Deployment - reCreate&rollingUpdate](./k8s/deployment_reCreate_rollingUpdate.md)
 
 <br>
 
