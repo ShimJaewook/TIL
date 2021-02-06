@@ -1,3 +1,7 @@
+
+
+
+
 # Controller - DaemonSet & Job
 
 ---
@@ -103,4 +107,102 @@ kubectl label nodes k8s-node2 os-
 ```
 
 
+
+### 2. Job & CronJob
+
+---
+
+
+
+**2-1) Job1**
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-1
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: container
+        image: kubetm/init
+        command: ["sh", "-c", "echo 'job start';sleep 20; echo 'job end'"]
+      terminationGracePeriodSeconds: 0
+```
+
+
+
+![](./src/job.jpg)
+
+
+
+**2-2) Job2**
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-2
+spec:
+  completions: 6
+  parallelism: 2
+  activeDeadlineSeconds: 30
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: container
+        image: kubetm/init
+        command: ["sh", "-c", "echo 'job start';sleep 20; echo 'job end'"]
+      terminationGracePeriodSeconds: 0
+```
+
+
+
+### 3. Cron Job
+
+---
+
+
+
+![](./src/cronJob.jpg)
+
+**3-1) Cron Job**
+
+```yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: cron-job
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+          - name: container
+            image: kubetm/init
+            command: ["sh", "-c", "echo 'job start';sleep 20; echo 'job end'"]
+          terminationGracePeriodSeconds: 0
+```
+
+
+
+**Kubectl**
+
+```bash
+kubectl create job --from=cronjob/cron-job cron-job-manual-001
+```
+
+
+
+**Suspend**
+
+```bash
+kubectl patch cronjobs cron-job -p '{"spec" : {"suspend" : false }}'
+```
 
