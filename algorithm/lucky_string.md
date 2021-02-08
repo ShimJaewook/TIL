@@ -21,42 +21,122 @@
 ---
 
 ```cpp
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <vector>
-
+#include<iostream>
+#include<vector>
+ 
+#define endl "\n"
+#define MAX 200
 using namespace std;
-
-int answer =0;
-string input;
-
-bool ck_lucky(string s)
+ 
+int R, C, N;
+int Boom_Time[MAX][MAX];
+char MAP[MAX][MAX];
+ 
+int dx[] = { 0, 0, 1, -1 };
+int dy[] = { 1, -1, 0, 0 };
+ 
+void Input()
 {
-    char last;
-    for(char cur: s )
+    cin >> R >> C >> N;
+    for (int i = 0; i < R; i++)
     {
-        if(last==cur) return false;
-        last = cur;
+        for (int j = 0; j < C; j++)
+        {
+            cin >> MAP[i][j];
+            if (MAP[i][j] == 'O')
+            {
+                Boom_Time[i][j] = 3;
+            }
+        }
     }
-    return true;
 }
-
-int main()
+ 
+void Install_Boom(int T)
 {
-    ios_base :: sync_with_stdio(NULL);
-    cin.tie(NULL); cout.tie(NULL);
-
-    cin >> input;
-
-    string next_str = input;
-
-    do{
-        next_permutation(next_str.begin(),next_str.end());
-        answer+=ck_lucky(next_str);
-    }while(next_str!=input);
-
-    cout << answer;
+    for (int i = 0; i < R; i++)
+    {
+        for (int j = 0; j < C; j++)
+        {
+            if (MAP[i][j] == 'O') continue;
+            MAP[i][j] = 'O';
+            Boom_Time[i][j] = T + 3;
+        }
+    }
+}
+ 
+void Delete_Boom(int T)
+{
+    for (int i = 0; i < R; i++)
+    {
+        for (int j = 0; j < C; j++)
+        {
+            if (Boom_Time[i][j] == T)
+            {
+                for (int k = 0; k < 4; k++)
+                {
+                    int nx = i + dx[k];
+                    int ny = j + dy[k];
+                    
+                    if (nx < 0 || ny < 0 || nx >= R || ny >= C) continue;
+                    if (MAP[nx][ny] == '.') continue;
+ 
+                    MAP[nx][ny] = '.';
+                }
+                MAP[i][j] = '.';
+                Boom_Time[i][j] = 0;
+            }
+        }
+    }
+}
+ 
+void Print()
+{
+    for (int i = 0; i < R; i++)
+    {
+        for (int j = 0; j < C; j++)
+        {
+            cout << MAP[i][j];
+        }
+        cout << endl;
+    }
+}
+ 
+void Solution()
+{
+    int Time = 2;
+    while (1)
+    {
+        if (Time == N + 1) break;
+ 
+        if (Time % 2 == 0)
+        {
+            Install_Boom(Time);
+        }
+        else
+        {
+            Delete_Boom(Time);
+        }
+        Time++;
+    }
+    Print();
+}
+ 
+void Solve()
+{
+    Input();
+    Solution();
+}
+ 
+int main(void)
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+ 
+    //freopen("Input.txt", "r", stdin);
+    Solve();
+ 
+    return 0;
 }
 ```
 
