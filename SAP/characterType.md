@@ -4,9 +4,7 @@
 
 - 데이타 타입 
 
- 
-
-초기길이
+초기길이 
 
 가능길이
 
@@ -14,7 +12,7 @@
 
 의미
 
- Numeric Types 
+1. Numeric Types 
 
 I
 
@@ -24,7 +22,7 @@ I
 
 0
 
- Integer (whole number)
+2. Integer (whole number)
 
 F
 
@@ -34,7 +32,7 @@ F
 
 0
 
- Floating point num er
+3. Floating point num er
 
 P
 
@@ -123,18 +121,19 @@ X'0 ... 0'
   DATA : GV_NUM  TYPE  I,
 
             GV_DECI  TYPE  F,
-
+    
             GV_DATE  TYPE  D,
-
+    
             GV_TIME  TYPE  T,
-
+    
             GV_TEXT1  TYPE  C,
-
+    
             GV_TEXT2(2)  TYPE  C,
-
+    
             GV_LONGTEXT  TYPE  STRING.
 
  
+
 
 2. 프로그램의 Local Type을 이용하여 변수 선언 
 
@@ -143,9 +142,9 @@ X'0 ... 0'
  TYPES : BEGIN  OF  T_STRUCT,
 
        COL1  TYPE  C,
-
+    
        COL2  TYPE  I,
-
+    
        COL3  TYPE  D,
 
   END  OF  T_STRUCT.
@@ -160,15 +159,17 @@ X'0 ... 0'
 
  
 
+
 3. ABAP Dictionary의 Type을 이용하여 변수 선언
 
  DATA : GV_CARRID  TYPE  S_CARR_ID,
 
             GV_CONNID  TYPE  SFLIGHT-CARRID,
-
+    
             GV_MATNR  TYPE  MARA-MATNR.
 
  
+
 
 - Data 구문
 
@@ -181,10 +182,11 @@ X'0 ... 0'
 =>
 
      DATA : GV_NUM1  TYPE  I,
-
+    
                 GV_NUM2  TYPE  I.
 
  
+
 
 2. LIKE => 먼저 만들어 놓은 DATA타입과 같은 타입의 변수를 만들 때 사용 
 
@@ -199,12 +201,13 @@ X'0 ... 0'
  DATA : GV_NUM  TYPE  I  VALUE  123,
 
             GV_FLAG  VALUE  'X',
-
+    
             GV_VAL  VALUE  IS  INITIAL,
-
+    
             GV_IDX  LIKE  SY-TABIX  VALUE  45.
 
  
+
 
 4. LENGTH => 필드 길이 지정. ( C, N, P, X 타입에만 사용 가능 ) 
 
