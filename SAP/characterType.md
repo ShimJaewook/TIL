@@ -2,25 +2,9 @@
 
 ### character Type
 
-- 데이타 타입 
+- 데이타 타입 초기길이 가능길이초기값의미
 
-초기길이 
-
-가능길이
-
-초기값
-
-의미
-
-1. Numeric Types 
-
-I
-
-4
-
-4
-
-0
+1. Numeric Types I 4 4 0
 
 2. Integer (whole number)
 
@@ -135,6 +119,7 @@ X'0 ... 0'
  
 
 
+
 2. 프로그램의 Local Type을 이용하여 변수 선언 
 
 * Local Type 선언
@@ -160,6 +145,7 @@ X'0 ... 0'
  
 
 
+
 3. ABAP Dictionary의 Type을 이용하여 변수 선언
 
  DATA : GV_CARRID  TYPE  S_CARR_ID,
@@ -169,6 +155,7 @@ X'0 ... 0'
             GV_MATNR  TYPE  MARA-MATNR.
 
  
+
 
 
 - Data 구문
@@ -186,6 +173,7 @@ X'0 ... 0'
                 GV_NUM2  TYPE  I.
 
  
+
 
 
 2. LIKE => 먼저 만들어 놓은 DATA타입과 같은 타입의 변수를 만들 때 사용 
@@ -207,6 +195,7 @@ X'0 ... 0'
             GV_IDX  LIKE  SY-TABIX  VALUE  45.
 
  
+
 
 
 4. LENGTH => 필드 길이 지정. ( C, N, P, X 타입에만 사용 가능 ) 
