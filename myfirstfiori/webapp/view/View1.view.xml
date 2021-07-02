@@ -23,6 +23,12 @@
 					<content>
 						<Button text="Press" press="onClick"></Button>
 					</content>
+<content>
+						<Button text="Press" press="onClick"></Button>
+					</content>
+<content>
+						<Button text="Press" press="onClick"></Button>
+					</content>
 				</Page>
 			</pages>
 		</App>
