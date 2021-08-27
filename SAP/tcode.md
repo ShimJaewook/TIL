@@ -11,3 +11,6 @@
 - /IWFND/GW_CLIENT : Gateway Client
 - S000 : 스탠다드 프로그램 찾기
 
+- pb : 조직조회
+- fb03 : 전표조회
+- ex : 해당 세션 모든 창 끄기.
