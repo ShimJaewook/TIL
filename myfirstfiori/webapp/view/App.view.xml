@@ -1,0 +1,19 @@
+<mvc:View
+	xmlns="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	controllerName="sap.ui.demo.nav.controller.App"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel headerText="{student>firstName}" class="sapUiResponsiveMargin" width="auto">
+		<form:SimpleForm editable="true" layout="ColumnLayout">
+			<Label text="{student>firstName}"/>
+			<Input value="{student>firstName}" valueLiveUpdate="true" width="200px" enabled="true"/>
+			<Label text="{/lastName}"/>
+			<Input value="{/lastName}" valueLiveUpdate="true" width="200px" enabled="true"/>
+			<Label text="Enabled"/>
+			<Text text="{path: 'students>/',
+				formatter: '.sumAge'}" />
+				
+			<CheckBox selected="{/enabled}"/>
+		</form:SimpleForm>
+	</Panel>
+</mvc:View>

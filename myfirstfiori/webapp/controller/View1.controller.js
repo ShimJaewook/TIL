@@ -9,7 +9,8 @@ sap.ui.define([
 
 		return Controller.extend("myfirstfiori.controller.View1", {
 			onInit: function () {
-
+				var test = this.getView().oModels;
+				debugger;
 			}
 		});
 	});

@@ -1,30 +1,29 @@
 sap.ui.define([
-	"sap/ui/core/UIComponent",
-	"sap/ui/Device",
-	"myfirstfiori/model/models"
-], function (UIComponent, Device, models) {
-	"use strict";
+    "sap/ui/core/UIComponent"
+], function (UIComponent) {
+    "use strict";
 
-	return UIComponent.extend("myfirstfiori.Component", {
+    return UIComponent.extend("sap.ui.demo.nav.Component", {
 
-		metadata: {
-			manifest: "json"
-		},
+        metadata: {
+            manifest: "json"
+        },
 
-		/**
-		 * The component is initialized by UI5 automatically during the startup of the app and calls the init method once.
-		 * @public
-		 * @override
-		 */
-		init: function () {
-			// call the base component's init function
-			UIComponent.prototype.init.apply(this, arguments);
+        init: function () {
+            // call the init function of the parent
+            
+            UIComponent.prototype.init.apply(this, [{ arr : 
+            [
+                {a : 1},
+                {a : 6},
+                {a : 5},
+                {a : 4},
+                {a : 3},
+                {a : 2}
+            ]}]);
 
-			// enable routing
-			this.getRouter().initialize();
-
-			// set the device model
-			this.setModel(models.createDeviceModel(), "device");
-		}
-	});
+            // create the views based on the url/hash
+            this.getRouter().initialize();
+        }
+    });
 });
