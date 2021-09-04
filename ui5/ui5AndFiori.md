@@ -1,9 +1,24 @@
-# UI5 & Fiori
+# UI5 and Fiori
 
-Fiori 애플리케이션은 UI5 프레임 워크를 사용하여 Fiori 지침을 엄격하게 준수하는 사용자 지정 또는 표준 애플리케이션을 나타냅니다. 
-따라서 유일한 차이점은 Fiori 디자인 지침을 준수하는 응용 
+Fiori는 정말 다양한 의미로 혼용해서 사용하는데요... 
+제가 이해한바로는 Fiori는 UX에 가깝습니다. 
+User Experience를 모아놓은 집합이라고 보시면되구요. 
+구글에 Fiori Design Guide라고 쳐보면 잘나옵니다. 
+버튼은 어떻게 배치해야하고 글자는 몇자이상이면안되고 어떤 경우에 써야하고, 
+이런 경험들을 모아둔거죠. 
+또 다른 의미로는 피오리 런치패드, 앱 라이브러리에 있는 앱들도 FLP, Fiori App등으로 불리구요. 
+물론 이러한 친구들도 모두 Fiori UX기반에 의거하여 만들어진 친구들이죠.
 
+그럼 UI5는 무엇이냐? 
+Tools 즉 도구입니다. 
+Fiori란 집을 지으려면 망치, 톱 등 도구가 필요하죠. 
+Fiori란 집을 짓기위한 도구라고 보시면 됩니다. 그럼 UI5로만 집을 지을수있냐? 
+그건 아닙니다. 규정하기로는 Fiori를 만들수 있는 방법은 몇가지 더있구요 하지만 최근에는 다른 기술들은 거의 하향세이고 내부적으로 보면 UI5가 주로 쓰입니다.
 
-
-*https://itpfed.com/what-is-sap-fiori-how-its-different-from-sapui5/*
-
+SAPUI5 === FIORI?
+SAP Fiori는 SAP 소프트웨어 및 애플리케이션을 위한 새로운 사용자 경험(UX)입니다. 
+Fiori design guide를 준수하여 만든 앱이고 보통은 Fiori Launchpad에서 타일 형태로 제공이 됩니다. 
+Fiori란 산이 있다고 하면 SAPUI5는 여러가지 등산로 중에 한가지 길이라고 보시면 됩니다.(Webdyn으로도 Fiori앱을 만들 수 있습니다.) 
+한가지 비유를 더 들자면 SAPUI5를 망치나 목재 톱같은 Tools에 빗대고 Fiori를 완성된 집에 비유하기도 합니다. 
+SAPUI5란 도구를 사용하여 UX가 집약된 Fiori란 멋진 집을 만드실 수 있습니다. Fiori는 이탈리어로 꽃이라는 뜻이 있다고합니다. 
+SAP는 어쩌면 Fiori를 통하여 그간 Weak point로 거론되어왔던 UI/UX를 꽃피우고 싶었는지도 모르겠습니다.
